@@ -1,0 +1,162 @@
+.ui-form {
+    padding: 20px 0px;
+}
+
+.call_order {
+    color: #fff;
+}
+
+
+.form-row {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.form-row input {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    border-width: 0;
+    border-bottom: 2px solid #fff;
+    transition: all 0.2s ease;
+    color: #fff;
+    z-index: 2;
+}
+
+.form-row label {
+    position: absolute;
+    left: 13px;
+    color: #9d959d;
+    font-size: 20px;
+    font-weight: 300;
+    transform: translateY(0px);
+    transition: all 0.2s ease;
+}
+
+.form-row input:focus {
+    outline: 0;
+    border-color: #fff;
+}
+
+.form-row input:focus+label,
+.form-row input:valid+label {
+    transform: translateY(-35px);
+    margin-left: -14px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: 0;
+    border-color: #fff;
+    color: #fff;
+}
+
+.ui-form input[type="submit"] {
+    width: 100%;
+    padding: 0;
+    line-height: 42px;
+    background: #fff;
+    border-width: 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.ui-form p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="text"].form-control,
+input[type="email"].form-control {
+    padding: 10px 15px 0px;
+    font-size: 16px !important;
+    background: transparent;
+    z-index: 2;
+    position: relative;
+    border: unset;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+
+}
+
+.wpcf7-form-control-wrap {
+    background: #000;
+    height: 100%;
+    display: block;
+}
+
+label {
+    transform: translateY(-100%);
+    z-index: 1;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: #9b9b9b;
+    line-height: 42px;
+    position: absolute;
+    padding: 0 17px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form-group.active>label {
+    transform: translateY(-125%);
+    color: #fff;
+    font-size: 10px;
+    padding: 0 16px;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0px 3px 0px 0rem rgb(230, 230, 230);
+}
+
+span.wpcf7-not-valid-tip {
+    font-size: 0.7em;
+    font-weight: 100;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_form {
+    padding: 4rem 0;
+
+    @media #{$small_mobile} {
+        padding: 2rem 10px;
+
+    }
+
+    @media #{$large_mobile} {
+        padding: 2rem 10px;
+
+    }
+}
+
+.wpcf7-form-control.wpcf7-submit.btn_designed_2.footer_btn_des {
+    padding-right: 0em;
+    padding-left: 0em;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "puzzle-agency-layout",
+  "version": "0.0.1",
+  "description": "This layouts for puzzle-agency.by.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yan Kazimirchick",
+  "license": "ISC",
+  "homepage": "https://puzzle-agency.by",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "gulp-clean-css": "^4.3.0",
+    "readable-stream": "^3.6.0"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,441 @@
+.repair_first {
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    padding: 0px 0px 0px 7.5%;
+    background-position: center;
+    background-image: url('../img/first-repair-image.jpg');
+
+    @media #{$small_mobile} {
+        padding: 0px 0px 0px 0px;
+        height: 130vh;
+
+    }
+
+    @media #{$large_mobile} {
+        padding: 0px 0px 0px 0px;
+        height: 130vh;
+    }
+
+    .container {
+        height: calc(100vh - 120px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 1em;
+
+        @media #{$small_mobile} {
+            padding: 0px 1rem;
+            justify-content: space-around;
+            // text-align: center;
+
+
+        }
+
+        @media #{$large_mobile} {
+            padding: 0px 1rem;
+            justify-content: space-around;
+            // text-align: center;
+        }
+
+    }
+
+    .main_select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button-group {
+
+            a.active {
+                color: #fff;
+            }
+
+            a {
+                color: #5e5e5e;
+            }
+        }
+
+        @media #{$small_mobile} {
+            .button-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+        }
+
+        @media #{$large_mobile} {
+            .button-group {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+    }
+
+    .main_content {
+
+
+
+
+        h1 {
+
+            font-size: 3em;
+            font-family: "Gotham Pro";
+            color: white;
+            line-height: 1;
+            text-align: left;
+            font-weight: 900;
+            padding: 0 0 1rem 0;
+
+            @media #{$small_mobile} {
+                font-size: 30px;
+                text-align: center;
+                padding-top: 250px !important;
+            }
+
+            @media #{$large_mobile} {
+                font-size: 30px;
+                text-align: center;
+                padding-top: 250px !important;
+            }
+
+            @media #{$tab_device} {
+                font-size: 30px;
+
+            }
+
+            @media #{$medium_device} {
+                font-size: 35px;
+
+            }
+
+        }
+
+
+    }
+
+    .navigation_top {
+        align-items: right;
+
+        @media #{$small_mobile} {
+            display: none;
+        }
+
+        @media #{$large_mobile} {
+            display: none;
+        }
+
+        a {
+            font-size: 1rem;
+            color: #5e5e5e;
+
+            &:hover {
+                color: #FFf;
+            }
+
+        }
+    }
+
+    .line-hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 2px solid rgb(255, 255, 255);
+        width: 120px;
+        margin: 0px 30px
+    }
+
+}
+
+.repair_second {
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/second-repair-image.jpg');
+
+
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    align-items: center;
+    display: flex;
+
+    .fifth_section__scrolltext {
+        justify-content: center;
+        display: flex;
+        /*padding: 0 180px;*/
+        flex-direction: column;
+
+        @media #{$small_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$large_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$tab_device} {
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 2;
+
+
+            @media #{$small_mobile} {
+                line-height: 1;
+            }
+
+            @media #{$large_mobile} {
+                line-height: 1;
+            }
+        }
+
+        a {
+            font-weight: 900;
+            width: max-content;
+            transition: 0.3s;
+
+            &:hover {
+                color: rgb(204, 204, 204);
+            }
+        }
+
+    }
+
+}
+
+.repair_three {
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/three-repair-image.jpg');
+
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    align-items: center;
+    display: flex;
+
+    .fifth_section__scrolltext {
+        justify-content: center;
+        display: flex;
+        /*padding: 0 180px;*/
+        flex-direction: column;
+
+        @media #{$small_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$large_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$tab_device} {
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 0.80rem;
+
+            font-weight: 100;
+        }
+
+        a {
+            font-weight: 900;
+            width: max-content;
+            transition: 0.3s;
+
+            &:hover {
+                color: rgb(204, 204, 204);
+            }
+        }
+
+    }
+}
+
+.scheme-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+
+    #reveal-elements {
+        @media #{$small_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$large_mobile} {
+            padding: 0 10px;
+        }
+    }
+
+    .scheme-name-fixed {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+
+        @media #{$small_mobile} {
+            padding: 0rem 10px;
+        }
+
+        @media #{$large_mobile} {
+            padding: 0rem 10px;
+        }
+    }
+
+    .scheme-item {
+        .scheme-item-number {
+            font-weight: 900;
+            font-size: 3rem;
+        }
+
+        .scheme-item-label {
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .scheme-item-description {
+            font-weight: 100;
+        }
+    }
+}
+
+.section_repair_text {
+
+    min-height: 100vh;
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        p {
+            font-weight: 100;
+            line-height: 1.5;
+        }
+
+        p.h6 {
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        @media #{$large_mobile} {
+            padding: 2rem 25px
+        }
+
+        @media #{$small_mobile} {
+            padding: 2rem 25px
+        }
+    }
+}
+
+.repair_textarea {
+    .quote {
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    .h6 {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+
+    p {
+        font-weight: 100;
+    }
+}
+
+.repair_portfolio_section {
+    // min-height: 100vh;
+
+    .repair_portfolio {
+        @media #{$large_mobile} {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media #{$small_mobile} {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        height: 100%;
+
+        h3 {
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 1.3rem;
+        }
+
+        a.underline-anim:hover {
+            font-weight: 600;
+            transition: 0.5s;
+        }
+
+    }
+
+}
+
+.repair_form_section {
+
+
+    .repair_form {
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 100;
+
+        }
+    }
+}
+
+.repair_portfolio-wraper p {
+
+    @media #{$large_mobile} {
+        display: none;
+    }
+
+    @media #{$small_mobile} {
+        display: none;
+    }
+
+}

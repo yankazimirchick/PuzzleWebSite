@@ -1,0 +1,196 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../fonts/stylesheet.css"; //шрифт
+
+@import "_variables";
+@import "_common";
+
+
+//импорт стилей главной
+@import "_1stsection";
+@import "_2ndsection";
+@import "_3rdsection";
+@import "_4thsection";
+@import "_5thsection";
+//аппартаменты
+@import "_apartmentssection";
+//price
+@import "_pricesection";
+//price
+@import "_contactsection";
+//blog
+@import "_blogsection";
+//page
+@import "_pagesection";
+//team
+@import "_teamsection";
+//секция 
+@import "_categorytsection";
+//страница ремонта 
+@import "_repairpage";
+
+@import "_menu";
+@import "_form";
+@import "_modal";
+@import "_preloader";
+@import "_apple";
+
+body {
+    background-color: #fff;
+    font-family: 'Gotham Pro';
+    color: #000;
+
+
+}
+
+main,
+footer {
+    width: 100%;
+
+    @media #{$small_mobile} {
+        width: 100%;
+    }
+
+    @media #{$large_mobile} {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.navbar {
+    z-index: 2;
+}
+
+
+
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tittle-bg-cyan {
+    @extend %font-bebas;
+    position: relative;
+}
+
+.tittle-bg-cyan:before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    background: $color_cyan;
+    position: absolute;
+    z-index: -1;
+    border-radius: 3px;
+    left: -13px;
+    top: -4px;
+
+}
+
+.tittle-bg-magenta {
+    @extend %font-bebas;
+    position: relative;
+}
+
+.tittle-bg-magenta:before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    background: $color_magenta;
+    position: absolute;
+    z-index: -1;
+    border-radius: 3px;
+    left: -13px;
+    top: -4px;
+}
+
+.tittle-bg-yellow {
+    @extend %font-bebas;
+    position: relative;
+}
+
+.tittle-bg-yellow:before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    background: $color_yellow;
+    position: absolute;
+    z-index: -1;
+    border-radius: 3px;
+    left: -13px;
+    top: -4px;
+
+}
+
+
+
+footer {
+    .footer-wrapper {
+        background-color: $color_gray;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #a8a8a8;
+    }
+
+}
+
+
+
+
+
+
+//подчеркивание ссылок
+a.underline-anim {
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding: 0px 0px 10px 0px;
+    margin-right: 10px;
+    width: max-content;
+
+}
+
+a.underline-anim:hover,
+a.underline-anim:focus {
+    background-size: 100% 2px;
+    color: #fff;
+    text-decoration: unset;
+}
+
+.underline-anim {
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding: 0px 0px 10px 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.underline-anim:hover,
+.underline-anim:focus {
+    background-size: 100% 2px;
+    color: #fff;
+    text-decoration: unset;
+}
+
+.underline-anim.active {
+    background-size: 100% 2px;
+    color: #fff;
+    text-decoration: unset;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab:'(max-width: 991px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';
+
+
+%color-white {
+    color: #fff;
+}
+
+
+
+%font-bebas {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+%font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+$color_magenta:#f54785;
+$color_yellow:#ffc107;
+$color_cyan:#4cc0c2;
+$color_gray:#222222;
+$color_grad: linear-gradient(82deg, rgba(76, 192, 194, 0.8) 0, rgba(245, 71, 133, 0.8) 49%, rgba(255, 193, 7, 0.8) 90%) 0 0 no-repeat padding-box;
+
+.border-cyan {
+    border-bottom: 4px solid $color_cyan;
+    margin: 10px 5% 30px 5%;
+}
+
+.border-magenta {
+    border-bottom: 4px solid $color_magenta;
+    margin: 10px 5% 30px 5%;
+}
+
+.border-yellow {
+    border-bottom: 4px solid $color_yellow;
+    margin: 10px 5% 30px 5%;
+}
+
+.bg-section-light {
+    background: #FAFAFA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-section-white {
+    background: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}

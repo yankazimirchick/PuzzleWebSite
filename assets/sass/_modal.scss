@@ -1,0 +1,19 @@
+.modal-content {
+
+    background-color: #000;
+
+    .close {
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-shadow: 0 0 0 #fff;
+        opacity: 1;
+    }
+}
+
+.modal-body {
+
+    border: 1px solid #fff;
+}

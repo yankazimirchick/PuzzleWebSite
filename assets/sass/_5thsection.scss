@@ -1,0 +1,49 @@
+.fifth_section {
+    height: 100vh;
+    background-image: url('../img/5-section-image.jpg');
+    background-size: cover;
+    color: #fff;
+    align-items: center;
+    display: flex;
+
+    .fifth_section__scrolltext {
+        justify-content: center;
+        display: flex;
+        /*padding: 0 180px;*/
+        flex-direction: column;
+
+        @media #{$small_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$large_mobile} {
+            padding: 0 10px;
+        }
+
+        @media #{$tab_device} {
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 0.80rem;
+
+            font-weight: 100;
+        }
+
+        a {
+            font-weight: 900;
+            width: max-content;
+            transition: 0.3s;
+
+            &:hover {
+                color: rgb(204, 204, 204);
+            }
+        }
+
+    }
+
+}
