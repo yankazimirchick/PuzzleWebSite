@@ -31,6 +31,23 @@
         margin: 0 !important;
     }
 
+    .slider-for {
+        .slider-for_image {
+            width: 350px;
+            height: 520px;
+            background: transparent no-repeat top center;
+            background-image: none;
+            background-size: auto;
+            background-size: auto 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+    }
 
     .slider-for-text {
         h3 {

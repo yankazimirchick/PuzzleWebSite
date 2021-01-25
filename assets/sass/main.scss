@@ -11,34 +11,25 @@
 @import "_3rdsection";
 @import "_4thsection";
 @import "_5thsection";
-//аппартаменты
-@import "_apartmentssection";
-//price
-@import "_pricesection";
+
+
 //price
 @import "_contactsection";
 //blog
 @import "_blogsection";
-//page
-@import "_pagesection";
-//team
-@import "_teamsection";
-//секция 
-@import "_categorytsection";
-//страница ремонта 
-@import "_repairpage";
-
 @import "_menu";
 @import "_form";
 @import "_modal";
 @import "_preloader";
-@import "_apple";
+
 
 body {
     background-color: #fff;
     @extend %font-roboto;
     color: #000;
 }
+
+header {}
 
 main,
 footer {
@@ -52,6 +43,8 @@ footer {
         width: 100%;
     }
 }
+
+footer {}
 
 
 
