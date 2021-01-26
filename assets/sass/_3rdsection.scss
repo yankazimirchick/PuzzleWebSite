@@ -67,9 +67,21 @@
 
     }
 
+    .big-arrow {
 
+        @media #{$small_mobile} {
+            display: none;
+        }
+
+        @media #{$large_mobile} {
+            display: none;
+        }
+
+    }
 
 }
+
+
 
 %small-arrow {
     width: 20px;
