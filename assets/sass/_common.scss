@@ -13,7 +13,8 @@
     height: 100%;
 
     &:hover {
-        background: rgb(29, 29, 29);
+        background: $color_magenta;
+        color: #fff;
     }
 
     &.active {
@@ -26,27 +27,9 @@
 }
 
 .service-filter-button.is-checked {
-    border: 2px solid #f54785;
-    background: #f54785;
+    border: 2px solid $color_magenta;
+    background: $color_magenta;
     color: #fff;
-}
-
-.btn_designed_2 {
-
-    background-color: #000 !important;
-    border-bottom: 1px solid #fff !important;
-    color: #fff !important;
-    width: max-content !important;
-    border-radius: unset !important;
-    font-weight: 700 !important;
-    font-size: 1rem !important;
-    transition: 0.3s !important;
-    border: 0px;
-    padding: 0;
-
-    &:hover {
-        color: rgb(179, 179, 179);
-    }
 }
 
 
