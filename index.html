@@ -66,14 +66,21 @@
         <!-- As a heading -->
         <nav class="navbar   navbar-light bg-light"
             style="box-shadow: 5px 8.66px 30px 0 rgba(31,35,37,.078);background-color: #fff !important;color: #222;z-index: 3;">
-            <div class="container">
-                <img height='40' class="navbar-brand" src="assets/img/logo/logo.png" alt="">
+            <div class="container navbar__wrapper">
+                <div class="col-2">
+                    <img height='40' class="navbar-brand" src="assets/img/logo/logo.png" alt="">
+                </div>
 
-                <a href="">Услуги</a>
-                <a href="case.html">Кейсы</a>
-                <a href="">О компании</a>
-                <a href="">Контакты</a>
-                <a href="tel:+375298454599" onclick="ym(46564131, 'reachGoal', 'header_phone'); return true;">+375 (29)
+                <div class="navbar__items-wrapper col-7">
+                    <div class="navbar__items-container">
+                        <a href="" class="navbar__item">Услуги</a>
+                        <a href="case.html" class="navbar__item">Кейсы</a>
+                        <a href="" class="navbar__item">О компании</a>
+                        <a href="" class="navbar__item">Контакты</a>
+                    </div>
+                    
+                </div>
+                <a href="tel:+375298454599" class="col-3" onclick="ym(46564131, 'reachGoal', 'header_phone'); return true;">+375 (29)
                     845-45-99</a>
             </div>
 
@@ -132,13 +139,14 @@
         <!-- ПРЕИМУЩЕСТВА -->
         <section class="second_section bg-section-white">
             <div class="container">
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-md-12 section-tittle">
                         <h2 class="tittle-bg-cyan ">ПРЕИМУЩЕСТВА...</h2>
                     </div>
+                </div>
+                <div class="row px-5">
                     <div class="col-md-6 col-lg-4 col-12 content_wrapper">
-
-                        <div class=" row ">
+                        <div class="row">
                             <div class="col-2 content_wrappper_img">
                                 <img src="assets/img/icon/light-bulb.svg" alt="">
                             </div>
