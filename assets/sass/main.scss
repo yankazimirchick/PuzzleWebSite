@@ -6,22 +6,24 @@
 
 
 //импорт стилей главной
-@import "_1stsection";
-@import "_2ndsection";
-@import "_3rdsection";
-@import "_4thsection";
+@import "./front-page/1stsection";
+@import "./front-page/_2ndsection";
+@import "./front-page/_3rdsection";
+@import "./front-page/_4thsection";
 @import "_elements";
 
 
 //price
 @import "_contactsection";
 //blog
-@import "_blogsection";
+@import "./front-page/_blogsection";
 @import "_menu";
 @import "_form";
 @import "_modal";
 @import "_preloader";
 
+
+@import "./header";
 
 body {
     background-color: #fff;

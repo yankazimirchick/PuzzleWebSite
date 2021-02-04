@@ -1,0 +1,27 @@
+.navbar {
+    font-family: 'bebas_neue';
+    height: 60px;
+}
+
+.navbar a {
+    font-size: calc(10px + 0.50vw);
+    color: $color_gray;
+}
+
+.navbar__wrapper {
+    max-width: 100%;
+}
+
+.navbar__items-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__items-container {
+
+}
+
+.navbar__item {
+    padding: 0 10px;
+    text-transform: uppercase;
+}

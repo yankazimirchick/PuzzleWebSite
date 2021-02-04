@@ -5,8 +5,16 @@ var sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
+var watch = require('gulp-watch');
 
-
+gulp.task('watch', function(){
+    watch('./assets/sass/*.scss', ['minify-css'], function(cb) {
+        style();
+    }); 
+    watch('./assets/sass/**/*.scss', ['minify-css'], function(cb) {
+        style();
+    }); 
+  })
 
 gulp.task('minify-css', () => {
     return gulp.src('assets/css/*.css')

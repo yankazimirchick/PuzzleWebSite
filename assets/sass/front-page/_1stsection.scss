@@ -1,0 +1,109 @@
+.first_section {
+    background: url("../img/main_p.jpg") #4CC0C2 no-repeat center;
+    background-position: center;
+    min-height: calc(100vh - 60px);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .tittle_wrapper {
+        @extend %color-white;
+
+        margin-top: 40px;
+        padding: 0;
+        letter-spacing: 5.8px;
+
+        margin-top: 40px;
+        z-index: 2;
+
+        h1 {
+            max-width: 600px;
+            font-weight: 500;
+            font-size: 58px;
+            @extend %font-bebas;
+            letter-spacing: 5.8px;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    .banner_wrapper {
+        background: $color_grad;
+        z-index: 2;
+
+        .banner_wrapper__item {
+            padding: 25px;
+            margin: 0;
+            border-right: 3px solid white;
+            @extend %color-white;
+
+            &:last-child {
+                border: none;
+            }
+
+
+            @media #{$small_mobile} {
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+
+            @media #{$large_mobile} {
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+
+            @media #{$tab_device} {
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 500;
+                @extend %font-bebas;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0 0 18px 0;
+                min-height: 100px;
+                @extend %font-roboto;
+            }
+
+            .banner_wrapper_link {
+                @extend %font-roboto;
+                @extend %color-white;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    transition: .2s ease;
+                    height: 10px;
+                    top: 0;
+                    right: 0px;
+                    padding-left: 23px;
+                    background: url(https://puzzle-agency.by/wp-content/uploads/2019/09/angle-right-white.svg) no-repeat center;
+                }
+            }
+        }
+    }
+}

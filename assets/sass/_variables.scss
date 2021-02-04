@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Device size variables
 $medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
 $tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
 $large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
@@ -10,34 +12,32 @@ $sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
 $big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
 $extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';
 
-
-%color-white {
-    color: #fff;
-}
-
-
-
+// Font Block
 %font-bebas {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'bebas_neue';
     letter-spacing: 2px;
-    font-weight: 700;
 }
 
 %font-roboto {
-
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'bebas_neue'; 
+    src: url('../../assets/fonts/ofont.ru_Bebas\ Neue.ttf'); 
+}
 
 
-
-
-
+// Colors Variables
 $color_magenta:#f54785;
 $color_yellow:#ffc107;
 $color_cyan:#4cc0c2;
 $color_gray:#222222;
 $color_grad: linear-gradient(82deg, rgba(76, 192, 194, 0.8) 0, rgba(245, 71, 133, 0.8) 49%, rgba(255, 193, 7, 0.8) 90%) 0 0 no-repeat padding-box;
+
+%color-white {
+    color: #fff;
+}
 
 .border-cyan {
     border-bottom: 4px solid $color_cyan;

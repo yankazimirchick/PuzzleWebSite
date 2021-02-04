@@ -1,0 +1,38 @@
+.second_section {
+
+    .tittle-bg-cyan {
+        font-size: 36px;
+    }
+
+    .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .content_wrappper_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-right: 18px;
+            }
+        }
+
+        .description {
+            max-width: 250px;
+            font-size: 14px;
+            color: #222222;
+            opacity: 0.7;
+            margin: 0 0 0 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        h3 {
+            @extend %font-bebas;
+            font-size: 22px;
+        }
+    }
+
+}
