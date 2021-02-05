@@ -1,0 +1,60 @@
+#contact_section {
+    font-family: $font-bebas;
+
+    .contact-form {
+        h3 {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: -10px;
+
+            @media #{$small_mobile} {}
+
+            @media #{$large_mobile} {}
+        }
+
+
+        .contact-form-label {
+            color: #a8a8a8;
+            margin-bottom: 0;
+        }
+
+        .contact-form-label-main {
+            color: #a8a8a8;
+            font-family: $font-roboto;
+        }
+
+        .contact-button {
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .contact-info {
+        margin-top: 20px;
+
+        h3 {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: -10px;
+
+            @media #{$small_mobile} {}
+
+            @media #{$large_mobile} {}
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+
+        h6 {
+            color: #a8a8a8;
+
+
+        }
+    }
+
+
+}
