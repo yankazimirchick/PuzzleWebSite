@@ -13,12 +13,10 @@
 @import "_elements";
 
 
-//Стили остальных страниц
-@import "./pages/_contactPage";
-@import "./pages/_blogPage";
-
+//price
+@import "_contactsection";
 //blog
-
+@import "./front-page/_blogsection";
 @import "_menu";
 @import "_form";
 @import "_modal";
