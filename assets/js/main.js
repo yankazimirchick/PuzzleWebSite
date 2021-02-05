@@ -37,7 +37,96 @@ function afterLoad() {
     // After Load function body!
 }
 
+//parallax
+document.addEventListener("scroll", (e) => {
+    let scroll_pos2 = window.scrollY;
+    const paralaxWrapper = document.querySelector(".paralax-wrapper");
+    const paralaxTittle = document.querySelector(".paralax-tittle");
+    scroll_pos = scroll_pos2 * -1 * 0.5;
+    var intViewportHeight = window.innerHeight * 0.6;
 
+    var opacitySetting = ((-intViewportHeight * 0.6) / (-scroll_pos2 - 60) / 2);
+    if (opacitySetting >= 1) {
+        opacitySetting = 1;
+    }
+    if (opacitySetting <= 0) {
+        opacitySetting = 0;
+    }
+    opacitySetting.toFixed(2);
+
+    // paralaxWrapper.style.backgroundPosition = "0px " + scroll_pos + "px";
+    paralaxWrapper.style.backgroundPosition = "0px " + scroll_pos + "px";
+    paralaxTittle.style.paddingTop = -scroll_pos * 1.5 + "px";
+    paralaxTittle.style.opacity = opacitySetting;
+});
+
+
+
+
+
+// external js: isotope.pkgd.js
+// init Isotope
+var $grid = $('.casegrid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows',
+    filter: '.web-dev'
+});
+// filter functions
+var filterFns = {
+    // show if number is greater than 50
+    numberGreaterThan50: function () {
+        var number = $(this).find('.number').text();
+        return parseInt(number, 10) > 50;
+    },
+    // show if name ends with -ium
+    ium: function () {
+        var name = $(this).find('.name').text();
+        return name.match(/ium$/);
+    }
+};
+// bind filter button click
+$('.filters-button-group').on('click', 'button', function () {
+    var filterValue = $(this).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[filterValue] || filterValue;
+    $grid.isotope({
+        filter: filterValue
+    });
+});
+// change is-checked class on buttons
+$('.button-group').each(function (i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+    });
+});
+
+
+//WEBDEV GRID
+let $activeWebDevButton = $(".innerFilterButton-active.webDevButton");
+let $webDevGrid = $("#webDevGrid").isotope({
+    itemSelector: '.webDevGrid-item',
+    layoutMode: 'fitRows',
+    filter: $activeWebDevButton.attr('data-filter'),
+});
+
+$(".webDevButton").on("click", function () {
+    if ($(this).hasClass("webDevButton")) {
+        $activeWebDevButton.removeClass("innerFilterButton-active");
+        $(this).addClass("innerFilterButton-active");
+        $activeWebDevButton = $(this);
+    }
+
+    let attrWebDevValue = $activeWebDevButton.attr('data-filter');
+
+    $webDevGrid.isotope({
+        filter: attrWebDevValue
+    });
+
+    $webDevGrid.isotope('layout');
+    // $specsGrid.isotope('layout');
+});
 
 
 
