@@ -55,23 +55,70 @@
 
 
     <header>
-        <!-- As a heading -->
-        <nav class="navbar   navbar-light bg-light"
-            style="box-shadow: 5px 8.66px 30px 0 rgba(31,35,37,.078);background-color: transparent !important;color: #222;z-index: 3;position: fixed;width: 100%;">
-            <div class="container">
-                <img height='40' class="navbar-brand" src="assets/img/logo/logo.png" alt="">
+        <div class="header">
+            <div class="header-container">
+                <div class="left-side-block">
+                    <a href="/" class="header-logo-wrapper">
+                        <!-- <img src="/wp-content/uploads/2020/12/header.png" class="header-logo"> -->
+                    </a>
+                </div>
+                <div class="center-side-block">
+                    <!-- For wordpress -->
+                    <!-- <?php wp_nav_menu([
+                        'theme_location' => 'main-menu',
+                        'container' => 'false',
+                        'menu_class'      => 'main-menu',  
+                        'walker'=> new Main_Nav_Menu()
+                    ]); ?> -->
 
-                <a href="index.html">Главная</a>
-                <a href="services.html">Услуги</a>
-                <a href="case.html">Кейсы</a>
-                <a href="">О компании</a>
-                <a href="contact.html">Контакты</a>
-                <a href="tel:+375298454599" onclick="ym(46564131, 'reachGoal', 'header_phone'); return true;">+375 (29)
-                    845-45-99</a>
+                    <!-- Test Template begin -->
+                    <ul id="menu-%d0%be%d1%81%d0%bd%d0%be%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="main-menu"><li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-83 first-level-main-items"><a href="http://puzzle/%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/">Услуги</a>
+                        <ul class="sub-menu second-level-main-menu"><div class="custom-second-level-arrow"></div>
+                            <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-90 second-level-main-items"><a href="http://puzzle/%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b0-web-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/">Разработка Web-сайтов</a>
+                            <ul class="sub-menu third-level-main-menu"><div class="custom-third-level-arrow"></div>
+                                <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 third-level-main-items"><a href="http://puzzle/landing-page/">Landing Page</a></li>
+                                <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88 third-level-main-items"><a href="http://puzzle/%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82-%d0%bc%d0%b0%d0%b3%d0%b0%d0%b7%d0%b8%d0%bd/">Интернет магазин</a></li>
+                            </ul>
+                        </li>
+                            <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-87 second-level-main-items"><a href="http://puzzle/smm-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5/">SMM Продвижение</a>
+                            <ul class="sub-menu third-level-main-menu"><div class="custom-third-level-arrow"></div>
+                                <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86 third-level-main-items"><a href="http://puzzle/%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2-instagram/">Продвижение в Instagram</a></li>
+                                <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84 third-level-main-items"><a href="http://puzzle/%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b5/">Продвижение Вконтакте</a></li>
+                            </ul>
+                        </li>
+                            <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85 second-level-main-items"><a href="http://puzzle/seo-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/">SEO Продвижение сайтов</a></li>
+                        </ul>
+                        </li>
+                        <li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82 first-level-main-items"><a href="http://puzzle/%d0%ba%d0%b5%d0%b9%d1%81%d1%8b/">Кейсы</a></li>
+                        <li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81 first-level-main-items"><a href="http://puzzle/%d0%be-%d0%ba%d0%be%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b8/">О Компании</a></li>
+                        <li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80 first-level-main-items"><a href="http://puzzle/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/">Контакты</a></li>
+                        </ul>
+                     <!-- Test Template close -->
+                     
+                    <div class="close-button-mobile-menu">
+                        <span class="left-side-close-button"></span>
+                        <span class="right-side-close-button"></span>
+                    </div>
+                    <div class="prev-button-mobile-menu">
+                        <span class="left-side-prev-button"></span>
+                        <span class="right-side-prev-button"></span>
+                    </div>
+                </div>
+                <div class="right-side-block">
+                    <div class="right-side-block-wrapper">
+                        <div class="icon-phone-wrapper">
+                            <a href="tel:+375(29)-845-45-99" class="icon-phone"></a>
+                        </div>
+                        <div class="phone-number">          
+                            <a href="tel:+375(29)-845-45-99">+375 (29) 845-45-99</a>
+                        </div>
+                        <div class="icon-menu-wrapper">
+                            <i class="icon-menu"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-        </nav>
+        </div>
     </header>
 
     <main>
