@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     if (window.screen.width <= 1200) {
         // Settings begin
         let timeShowingFirstLevelItems = 200;
         // settings close
         let openButtonMobileMenu = document.getElementsByClassName('icon-menu')[0];
+        let header = document.getElementsByClassName('header')[0];
         let html = document.getElementsByTagName('html')[0];
         let mainMenuContainer = document.getElementsByClassName('center-side-block')[0];
         let mainMenu = document.getElementsByClassName('main-menu')[0];
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         openButtonMobileMenu.addEventListener('click', () => {
             mainMenuContainer.classList.add('show-menu');
-            console.log(html)
+            header.style.position = 'unset';
             html.style.overflow = 'hidden';
 
             let timerShowing = setTimeout(function tick() {
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         closeButtonMobileMenu.addEventListener('click', () => {
             mainMenuContainer.classList.remove('show-menu');
+            header.style.position = 'relative';
             hiddenFirstLevelItems();
             hiddenSecondLevelMenu();
             hiddenThirdLevelMenu();
