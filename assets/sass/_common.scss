@@ -32,22 +32,6 @@
     color: #fff;
 }
 
-.contact-button {
-    background-color: $color_cyan;
-    font-family: $font-bebas;
-    padding: 10px 40px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.5;
-    line-height: 1.5;
-    border: unset;
-    transition: 0.25s;
-
-    &:hover {
-        background-color: #368f91;
-    }
-}
-
 
 .section_padding {
     padding: 140px 0px;

@@ -1,0 +1,80 @@
+#contact_section {
+
+    color: #fff;
+
+    h1 {
+
+        font-size: 1.5rem;
+
+        @media #{$small_mobile} {}
+
+        @media #{$large_mobile} {}
+    }
+
+    .contact_item-maps {
+
+        &:hover {
+
+            background-color: #fff;
+
+            p {
+                color: #000;
+
+            }
+        }
+
+        p {
+            color: #fff;
+            margin: 0;
+        }
+
+        cursor: pointer;
+    }
+
+    .contact_item-tittle {
+        h2 {
+            font-weight: 900;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+
+
+        p {
+            line-height: 1;
+            font-size: 1rem;
+            width: 100%;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    .contact_item {
+        border: 1px solid #fff;
+        transition: 0.5s;
+        display: flex;
+        padding: 2em;
+
+
+        svg {
+            fill: #fff;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        .sticky_contact {
+
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+
+    }
+
+
+}
