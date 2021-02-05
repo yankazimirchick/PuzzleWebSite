@@ -38,6 +38,7 @@ function afterLoad() {
 }
 
 //parallax
+//крч надо добавить проверку есть ли паралакс либо включать на страницах где он нужен
 document.addEventListener("scroll", (e) => {
     let scroll_pos2 = window.scrollY;
     const paralaxWrapper = document.querySelector(".paralax-wrapper");
