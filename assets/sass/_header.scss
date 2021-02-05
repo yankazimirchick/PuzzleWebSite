@@ -1,11 +1,6 @@
 .navbar {
-    font-family: 'bebas_neue';
+    font-family: $font-bebas;
     height: 60px;
-}
-
-.navbar a {
-    font-size: calc(10px + 0.50vw);
-    color: $color_gray;
 }
 
 .navbar__wrapper {
@@ -26,9 +21,14 @@
         display: flex;
 
         .navbar__item {
+            margin: 0 15px;
+            padding: 0;
             
             a {
                 position: relative;
+                font-weight: 700;
+                font-size: 1.142857142857143em;
+                color: $color_gray;
 
                 &::after {
                     content: '';
