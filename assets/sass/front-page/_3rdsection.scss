@@ -7,6 +7,59 @@
         width: 300px;
     }
 
+    .tittle-bg-mobile {
+        display: none;
+    }
+
+    @media #{$small_mobile} {
+        .slider-nav {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .tittle-bg-mobile {
+            display: block;
+        }
+    }
+
+    @media #{$large_mobile} {
+        .slider-nav {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .tittle-bg-mobile {
+            display: block;
+        }
+    }
+
+    @media #{$tab_device} {
+        .slider-nav {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .tittle-bg-mobile {
+            display: block;
+        }
+    }
+
+    .tittle-bg-bigscreen {
+        @media #{$small_mobile} {
+            display: none;
+        }
+
+        @media #{$large_mobile} {
+            display: none;
+        }
+
+        @media #{$tab_device} {
+            display: none;
+        }
+    }
+
     .slider-nav img {
         width: 50px;
         height: 50px;
