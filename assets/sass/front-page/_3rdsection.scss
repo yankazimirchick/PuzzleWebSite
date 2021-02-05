@@ -55,6 +55,7 @@
             line-height: 1;
             margin-bottom: 0px;
             margin-top: 50px;
+            font-weight: 700;
         }
 
         h5 {
@@ -152,4 +153,9 @@
 .slick-arrow:before {
     color: gray;
 
+}
+
+.slick-arrow {
+    margin: 0 !important;
+    z-index: 2;
 }
