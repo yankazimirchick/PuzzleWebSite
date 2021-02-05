@@ -33,8 +33,6 @@ body {
     color: #000;
 }
 
-header {}
-
 main,
 footer {
     width: 100%;
@@ -48,9 +46,74 @@ footer {
     }
 }
 
-footer {}
+.transparent-header {
+    position: absolute;
+    width: 100%;
 
+    background: transparent;
 
+    .header-container {
+
+        a {
+            color: #FFF;
+        }
+
+        .header-logo-wrapper {
+            background-image: url('../img/header/header-white.png');
+        }
+
+        .icon-phone {
+            background-image: url('../img/header/icons8-phone-23-white.png');
+        }
+        
+        .icon-menu-wrapper {
+
+            .icon-menu {
+                background-image: url('../img/header/');
+            }
+        }
+    }
+}
+
+.show-menu {
+    display: flex !important;
+}
+
+.show-menu-item {
+    opacity: 1;
+    transform: translateY(-10px) !important;
+}
+
+.show-second-menu {
+    left: 0 !important;
+    z-index: 20;
+}
+
+.show-third-menu {
+    left: 0 !important;
+    z-index: 30;
+}
+
+.opacity-0 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.raise-first-level-item {
+    z-index: 10;
+}
+
+.raise-second-level-item {
+    z-index: 20;
+}
+
+.hidden-mobile-menu-arrow {
+    opacity: 0;
+}
+
+.show-mobile-menu-arrow {
+    opacity: 1;
+}
 
 
 
