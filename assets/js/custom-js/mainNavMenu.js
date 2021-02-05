@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     if (window.screen.width <= 1200) {
         // Settings begin
         let timeShowingFirstLevelItems = 200;
