@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/dist/main.css">
+    <link rel="preload stylesheet" as="style" href="assets/fonts/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
     <title>Веб студия дизайна и разработки puzzle-agency</title>
@@ -20,12 +21,10 @@
         <div id="preloader">
             <div id="ctn-preloader" class="ctn-preloader">
                 <div class="animation-preloader">
-
                     <!-- Spinner -->
                     <div class="spinner">
                         <img width="100%" src="assets/img/logo/logo-kodred.png" alt="">
                     </div>
-
                     <!-- Start: Text Loading -->
                     <div class="txt-loading">
                         <span data-text-preloader="P" class="letters-loading">P</span>
@@ -39,12 +38,10 @@
                     <!-- End: Text Loading -->
 
                 </div>
-
                 <!-- Start: Preloader sides - Model 1 -->
                 <div class="loader-section section-left"></div>
                 <div class="loader-section section-right"></div>
                 <!-- End: Preloader sides - Model 1 -->
-
             </div>
         </div>
     </section>
@@ -59,7 +56,6 @@
             style="box-shadow: 5px 8.66px 30px 0 rgba(31,35,37,.078);background-color: #fff !important;color: #222;z-index: 3;">
             <div class="container">
                 <img height='40' class="navbar-brand" src="assets/img/logo/logo.png" alt="">
-
                 <a href="index.html">Главная</a>
                 <a href="services.html">Услуги</a>
                 <a href="case.html">Кейсы</a>
@@ -68,13 +64,10 @@
                 <a href="tel:+375298454599" onclick="ym(46564131, 'reachGoal', 'header_phone'); return true;">+375 (29)
                     845-45-99</a>
             </div>
-
-
         </nav>
     </header>
 
     <main>
-
         <!-- Блок с паралаксом-->
         <section class="paralax-block">
             <div class="paralax-overlay"></div>
@@ -85,19 +78,8 @@
                     </h1>
                 </div>
             </div>
-
         </section>
-
-        <style>
-            .paralax-wrapper {
-                background-size: cover;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100vh;
-                background-position: 0px 0px;
-            }
-        </style>
+        <!-- Блок с паралаксом конец-->
 
 
 
@@ -123,26 +105,31 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="tittle-filter">
-                                Наши проекты
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="tittle-filter">
+                                    <h3> Наши проекты</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="buttons-container">
-                                <button data-filter="" class="innerFilterButton webDevButton" id="webDevAll">Все
-                                </button>
-                                <button data-filter=".landing-filter"
-                                    class="innerFilterButton webDevButton innerFilterButton-active">Landing page
-                                </button>
-                                <button data-filter=".vizitka-filter"
-                                    class="innerFilterButton webDevButton">Сайт-визитка
-                                </button>
-                                <button data-filter=".shop-filter"
-                                    class="innerFilterButton webDevButton">Интернет-магазин
-                                </button>
+                            <div class="col-md-9">
+                                <div class="buttons-container">
+                                    <button data-filter=""
+                                        class="innerFilterButton service-filter-button-item webDevButton"
+                                        id="webDevAll">Все
+                                    </button>
+                                    <button data-filter=".landing-filter"
+                                        class="innerFilterButton webDevButton service-filter-button-item  innerFilterButton-active">Landing
+                                        page
+                                    </button>
+                                    <button data-filter=".vizitka-filter"
+                                        class="innerFilterButton webDevButton service-filter-button-item">Сайт-визитка
+                                    </button>
+                                    <button data-filter=".shop-filter"
+                                        class="innerFilterButton webDevButton service-filter-button-item">Интернет-магазин
+                                    </button>
 
+                                </div>
                             </div>
                         </div>
                     </div>

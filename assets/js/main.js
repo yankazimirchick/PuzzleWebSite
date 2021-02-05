@@ -22,7 +22,7 @@ function preloderFunction() {
 
         if ($('#ctn-preloader').hasClass('loaded')) {
             // It is so that once the preloader is gone, the entire preloader section will removed
-            $('#preloader').delay(1000).queue(function () {
+            $('#preloader').delay(100).queue(function () {
                 $(this).remove();
 
                 // If you want to do something after removing preloader:
