@@ -23,7 +23,7 @@
             height: 40px;
         }
     }
-    
+
     .icon-phone {
         display: flex;
         width: 23px;
@@ -44,11 +44,10 @@
         width: 120px;
         height: 40px;
     }
-        // Left side block begin
 
-    .left-side-block {
+    // Left side block begin
 
-    }
+    .left-side-block {}
 
 
     // Center side block begin
@@ -70,30 +69,31 @@
         color: $color_gray;
         list-style: none;
 
-            .sub-menu {
-                list-style: none;
-            }
+        .sub-menu {
+            list-style: none;
+        }
     }
 
-    .first-level-main-items  {
+    .first-level-main-items {
         position: relative;
         padding: 0 10px;
         letter-spacing: .1em;
 
-        &:hover { 
+        &:hover {
             .second-level-main-menu {
                 visibility: visible;
                 opacity: 1;
             }
-            & > a::before {
+
+            &>a::before {
                 width: 100%;
             }
         }
 
-        & > a {
+        &>a {
             position: relative;
             text-transform: uppercase;
-    
+
             &::before {
                 content: '';
                 position: absolute;
@@ -102,7 +102,7 @@
                 height: 3px;
                 margin-top: 5px;
                 background-color: $hover-menu-items-color;
-                
+
                 transition: 400ms;
             }
         }
@@ -134,7 +134,7 @@
 
             &:hover {
 
-                & > a {
+                &>a {
                     color: $hover-menu-items-color;
                 }
 
@@ -151,7 +151,7 @@
     }
 
     .second-level-main-items {
-        
+
 
         &:hover {
             .third-level-main-menu {
@@ -174,7 +174,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: -40px; 
+        top: -40px;
         min-width: 280px;
         padding: 25px 20px 40px;
         left: 100%;
@@ -187,9 +187,7 @@
         transition: 400ms;
     }
 
-    .third-level-main-items {
-        
-    }
+    .third-level-main-items {}
 
     // Right side block begin
     .right-side-block {
@@ -200,24 +198,24 @@
     }
 
     .right-side-block-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
-    .icon-phone-wrapper {
-
-    }
+    .icon-phone-wrapper {}
 }
 
 @media (max-width: 1200px) {
 
-    .header .third-level-main-menu, .header .second-level-main-menu {
+    .header .third-level-main-menu,
+    .header .second-level-main-menu {
         opacity: 1;
         visibility: visible;
     }
 
-    .custom-second-level-arrow, .custom-third-level-arrow {
+    .custom-second-level-arrow,
+    .custom-third-level-arrow {
         position: relative;
         width: 32px;
         height: 32px;
@@ -232,12 +230,14 @@
             border-top: 3px solid $color_cyan;
             border-right: 3px solid $color_cyan;
 
-            transform: translate(0,-50%) rotate(-135deg);
+            transform: translate(0, -50%) rotate(-135deg);
         }
+
         &::before {
             content: '';
             position: absolute;
-            top: calc(50% - 1px);;
+            top: calc(50% - 1px);
+            ;
             left: 4px;
             width: 100%;
             border-bottom: 3px solid $color_cyan;
@@ -260,19 +260,19 @@
             position: unset;
         }
 
-        .menu-item-has-children > a::after {
-                content: '';
-                display: block;
-                position: absolute; 
-                top: 50%;
-                right: -20px;
-                transform: translateY(-50%) rotate(45deg);
-                width: 5px;
-                height: 5px;
-                border-right: 2px $second-items-color solid;
-                border-top: 2px $second-items-color solid;
-            
-                transition: 250ms;
+        .menu-item-has-children>a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%) rotate(45deg);
+            width: 5px;
+            height: 5px;
+            border-right: 2px $second-items-color solid;
+            border-top: 2px $second-items-color solid;
+
+            transition: 250ms;
         }
 
         .second-level-main-menu {
@@ -282,17 +282,17 @@
             top: -13px;
             left: 100%;
             z-index: 3;
-            background-color:#FFF;
-            
+            background-color: #FFF;
+
             transition: left 150ms ease-in;
 
-                .menu-item-has-children::after {
-                    content: unset !important;
-                }
+            .menu-item-has-children::after {
+                content: unset !important;
+            }
 
-                .second-level-main-items {
-                    position: unset;
-                }
+            .second-level-main-items {
+                position: unset;
+            }
         }
 
         .third-level-main-menu {
@@ -307,6 +307,7 @@
             background-color: #FFF;
         }
     }
+
     .center-side-block {
         align-items: center;
     }
@@ -333,7 +334,7 @@
                 display: flex;
                 width: 23px;
                 height: 23px;
-                background-image: url('../img/header/icons8-menu-23-black.png');    
+                background-image: url('../img/header/icons8-menu-23-black.png');
             }
 
             .right-side-block {
@@ -369,41 +370,45 @@
                     align-items: flex-start;
                     padding: 0;
                     margin: 0;
-            }
-            .close-button-mobile-menu {
-                position: absolute;
-                top: 5%;
-                left: 85%;
-                width: 27px;
-                height: 27px;
-                transform: rotate(45deg);
+                }
 
-                &:hover {
-                    &::after, &::before {
-                        background-color: $hover-menu-items-color;
+                .close-button-mobile-menu {
+                    position: absolute;
+                    top: 5%;
+                    left: 85%;
+                    width: 27px;
+                    height: 27px;
+                    transform: rotate(45deg);
+
+                    &:hover {
+
+                        &::after,
+                        &::before {
+                            background-color: $hover-menu-items-color;
+                        }
+                    }
+
+                    &::after,
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 13px;
+                        height: 27px;
+                        width: 2px;
+                        background-color: $effects-color;
+                    }
+
+                    &::before {
+                        transform: rotate(90deg);
                     }
                 }
 
-                &::after, &::before {
-                    content: '';
-                    position: absolute;
-                    left: 13px;
-                    height: 27px;
-                    width: 2px;
-                    background-color: $effects-color;
-                }
-
-                &::before {
-                    transform: rotate(90deg);
-                }
-            }
-            .prev-button-mobile-menu {
-
+                .prev-button-mobile-menu {}
             }
         }
     }
 }
-}
+
 @media (max-width: 600px) {
 
     .header .header-container .right-side-block .right-side-block-wrapper {
@@ -424,11 +429,13 @@
         padding: 10px 30px;
     }
 }
+
 @media (max-width: 260px) {
     .header {
         padding: 10px 10px;
     }
 }
+
 @media (max-width: 200px) {
     .header {
         padding: 10px 0px;
@@ -438,7 +445,8 @@
 
 // shared 
 
-.current-menu-item > a::before, .current-menu-ancestor > a::before {
+.current-menu-item>a::before,
+.current-menu-ancestor>a::before {
     width: 100% !important;
 }
 
