@@ -65,7 +65,7 @@ footer {
         .icon-phone {
             background-image: url('../img/header/icons8-phone-23-white.png');
         }
-        
+
         .icon-menu-wrapper {
 
             .icon-menu {
@@ -199,6 +199,22 @@ footer {
         padding-top: 30px;
         padding-bottom: 30px;
         color: #a8a8a8;
+
+        @media #{$small_mobile} {
+            .footer-inner {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @media #{$large_mobile} {
+            .footer-inner {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
     }
 
 }

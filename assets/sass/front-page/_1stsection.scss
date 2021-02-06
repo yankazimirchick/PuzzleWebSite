@@ -57,9 +57,7 @@
 
 
             @media #{$small_mobile} {
-                &:nth-child(2) {
-                    border: none;
-                }
+                border: none;
             }
 
             @media #{$large_mobile} {
