@@ -7,6 +7,16 @@
     background: #FFF;
     z-index: 15;
 
+    @media (min-width: 1200px) {
+        .second-level-main-menu li {
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            font-family: Roboto,Helvetica,Arial,sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+
     a {
         text-decoration: none;
         cursor: pointer;
@@ -112,7 +122,7 @@
         display: flex;
         position: absolute;
         flex-direction: column;
-        min-width: 280px;
+        min-width: 290px;
         top: 30px;
         padding: 25px 40px 40px;
         border-top: 15px solid transparent;
@@ -125,7 +135,7 @@
 
         li {
             margin-top: 15px;
-            font-family: $font-bebas;
+            /* font-family: $font-bebas; */
             font-size: $second-level-font-size-items;
         }
 
