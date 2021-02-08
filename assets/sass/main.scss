@@ -6,7 +6,7 @@
 
 
 //импорт стилей главной
-@import "./front-page/1stsection";
+@import "./front-page/_1stsection";
 @import "./front-page/_2ndsection";
 @import "./front-page/_3rdsection";
 @import "./front-page/_4thsection";
@@ -16,7 +16,7 @@
 //Стили остальных страниц
 @import "./pages/_contactPage";
 @import "./pages/_blogPage";
-
+@import "./pages/_casePage";
 //blog
 
 @import "_menu";
