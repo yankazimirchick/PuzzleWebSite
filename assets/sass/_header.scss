@@ -7,6 +7,12 @@
     background: #FFF;
     z-index: 15;
 
+    @media (min-width: 1200px) {
+        .second-level-main-menu li {
+            font-family: $roboto-light;
+        }
+    }
+
     a {
         text-decoration: none;
         cursor: pointer;
@@ -125,7 +131,7 @@
 
         li {
             margin-top: 15px;
-            font-family: $font-bebas;
+            /* font-family: $font-bebas; */
             font-size: $second-level-font-size-items;
         }
 
