@@ -1,0 +1,64 @@
+#case_section {
+
+
+    .case_group_button {
+
+        font-weight: 700;
+        letter-spacing: 2.2px;
+        font-size: 22px;
+        color: #222222;
+        padding: 0 10px;
+        transition: 0.4s ease;
+
+
+
+    }
+
+    .case_content {
+        .tittle-filter {
+            font-family: $font-bebas;
+            letter-spacing: 4.4px;
+            color: #222222;
+            opacity: .7;
+            font-weight: 700;
+            font-size: 22px;
+
+        }
+
+        .case_content_buttons {
+            font-family: $font-bebas;
+
+            .buttons-container {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            }
+        }
+
+
+        .service-filter-button-item {
+            font-size: 22px;
+        }
+
+
+    }
+
+
+
+    .contact-info {
+
+        h3 {
+
+
+            @media #{$small_mobile} {}
+
+            @media #{$large_mobile} {}
+        }
+
+        p {}
+
+        h6 {}
+    }
+
+
+}
