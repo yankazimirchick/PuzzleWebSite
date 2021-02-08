@@ -23,7 +23,7 @@ $extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)'
 
 $font-bebas:'Bebas Neue';
 $font-roboto:'Roboto';
-
+$roboto-light: 'Roboto Light';
 
 @font-face {
     font-family: 'Bebas Neue';
@@ -59,9 +59,12 @@ $font-roboto:'Roboto';
     font-weight: 700;
     font-style: normal;
 }
-
-
-
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Robotobold.ttf');
+    font-weight: light;
+    font-style: normal;
+}
 
 
 // Header
