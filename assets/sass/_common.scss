@@ -32,6 +32,11 @@
     color: #fff;
 }
 
+.innerFilterButton-active {
+    color: #FFF;
+    background: #f54785;
+}
+
 .service-filter-button-item {
 
     background: transparent;
@@ -320,6 +325,23 @@ ul {
 
 
 
+}
+
+.arrow-before-right {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        transition: 0.2s ease;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: -1px;
+        left: calc(100% + 3px);
+        padding-left: 10px;
+        background: url(/assets/img/icon/right-arrow.svg) no-repeat center;
+    }
 }
 
 /**************** common css end ****************/
