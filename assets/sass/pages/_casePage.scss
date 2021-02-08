@@ -103,3 +103,67 @@
         padding: 10px;
     }
 }
+
+.contact-form2-section {
+    background: #49babc;
+
+    h2 {
+        font-family: $font-bebas;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 3.6px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    p {
+
+        font-family: $font-roboto;
+        color: #fff;
+
+    }
+
+    .contact-form-section-inner {
+
+
+        padding: 20px 0px 20px 0px;
+
+    }
+
+    .nameInput,
+    .phoneInput {
+        padding: 12px;
+        border: unset;
+    }
+
+    .nameInput {
+        margin-bottom: 10px;
+    }
+
+    .messageInput {
+        border: unset;
+        padding: 10px;
+    }
+}
+
+.project-pagination {
+    position: relative;
+
+    hr {
+        margin-bottom: unset;
+    }
+
+    .project-pagination-item {
+        padding: 20px 0;
+
+        a {
+            font-family: $font-bebas;
+            text-transform: uppercase;
+
+            font-size: 25px;
+            color: #000;
+        }
+    }
+
+
+}
