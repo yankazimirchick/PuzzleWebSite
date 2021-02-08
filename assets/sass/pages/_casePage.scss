@@ -35,12 +35,9 @@
             }
         }
 
-
         .service-filter-button-item {
             font-size: 22px;
         }
-
-
     }
 
 
@@ -61,4 +58,48 @@
     }
 
 
+}
+
+.contact-form-section {
+    background: #FFC107;
+
+    h2 {
+        font-family: $font-bebas;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 3.6px;
+        margin-bottom: 10px;
+    }
+
+    p {
+
+        font-family: $font-roboto;
+
+    }
+
+    .contact-form-section-inner {
+
+
+        padding: 50px 15px 50px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+
+    .nameInput,
+    .phoneInput {
+        padding: 12px;
+        border: unset;
+    }
+
+    .nameInput {
+        margin-bottom: 10px;
+    }
+
+    .messageInput {
+        border: unset;
+        padding: 10px;
+    }
 }
