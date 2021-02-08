@@ -16,6 +16,14 @@
         left: 0;
         top: 0;
         background: rgba(0, 0, 0, 0.5);
+
+        @media #{$small_mobile} {
+            height: 1000%;
+        }
+
+        @media #{$large_mobile} {
+            height: 1000%;
+        }
     }
 
     .tittle_wrapper {
@@ -85,6 +93,14 @@
                 margin: 0 0 18px 0;
                 min-height: 100px;
                 @extend %font-roboto;
+
+                @media #{$small_mobile} {
+                    min-height: 10px;
+                }
+
+                @media #{$large_mobile} {
+                    min-height: 10px;
+                }
             }
 
             .banner_wrapper_link {
