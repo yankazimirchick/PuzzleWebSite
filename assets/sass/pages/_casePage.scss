@@ -1,6 +1,4 @@
 #case_section {
-
-
     .case_group_button {
 
         font-weight: 700;
@@ -9,12 +7,34 @@
         color: #222222;
         padding: 0 10px;
         transition: 0.4s ease;
-
-
-
     }
 
-    .case_content {
+    .servicesTabsContainer__tab {
+        margin-bottom: 10px;
+    }
+
+    .innerGridItem {
+        .case-item {
+            position: relative;
+            position: relative;
+            background-position: center;
+            min-height: 200px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .servicesGrid {
+        .servicesGrid-item {
+            margin-top: 30px;
+        }
+
+
         .tittle-filter {
             font-family: $font-bebas;
             letter-spacing: 4.4px;
@@ -22,7 +42,6 @@
             opacity: .7;
             font-weight: 700;
             font-size: 22px;
-
         }
 
         .case_content_buttons {
