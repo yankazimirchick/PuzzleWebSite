@@ -24,6 +24,7 @@ $extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)'
 $font-bebas:'Bebas Neue';
 $font-roboto:'Roboto';
 $roboto-light: 'Roboto Light';
+$text-font: Roboto,Helvetica,Arial,sans-serif;
 
 @font-face {
     font-family: 'Bebas Neue';
@@ -85,6 +86,8 @@ $color_cyan:#4cc0c2;
 $color_gray:#222222;
 $color-light-gray: #888;
 $color_grad: linear-gradient(82deg, rgba(76, 192, 194, 0.8) 0, rgba(245, 71, 133, 0.8) 49%, rgba(255, 193, 7, 0.8) 90%) 0 0 no-repeat padding-box;
+$color-white: #FFF;
+$background-color-gray: #F9F9F9;
 
 %color-white {
     color: #fff;
