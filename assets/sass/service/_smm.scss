@@ -1,0 +1,57 @@
+.smm {
+    .paralax-block .paralax-wrapper .paralax-inner {
+        @extend %additional-block;
+    }
+}
+
+.about-service-block {
+    padding: 60px 0;
+
+    .title-text {
+        padding-left: 10px;
+        font-family: $font-bebas;
+        font-size: 32px;
+    }
+
+    .text {
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 23px;
+        color: $color-light-gray;
+    }
+
+    .right-side-block {
+
+        .img {
+            width: 100%;
+        }
+    }
+}
+
+.advantages-table {
+
+    .table-title {
+
+    }
+
+    .advantages-table-wrapper {
+
+        .cell-header {
+
+            .cell-icon {
+
+            }
+
+            .cell-title {
+
+            }
+        }
+        
+        .cell-body {
+
+            .cell-text {
+                
+            }
+        }
+    }
+}

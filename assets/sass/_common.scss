@@ -1,3 +1,9 @@
+h1,
+h2,
+h3 {
+    letter-spacing: .05em;
+}
+
 .service-filter-button {
     background-color: #fff;
     color: #222222;
@@ -30,6 +36,18 @@
     border: 2px solid $color_magenta;
     background: $color_magenta;
     color: #fff;
+}
+
+.innerFilterButton-active {
+    color: #FFF;
+    background: #f54785;
+}
+
+.buttons-container {
+    .innerFilterButton-active {
+        color: #f54785;
+
+    }
 }
 
 .service-filter-button-item {
@@ -320,6 +338,23 @@ ul {
 
 
 
+}
+
+.arrow-before-right {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        transition: 0.2s ease;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: -1px;
+        left: calc(100% + 3px);
+        padding-left: 10px;
+        background: url(/assets/img/icon/right-arrow.svg) no-repeat center;
+    }
 }
 
 /**************** common css end ****************/
