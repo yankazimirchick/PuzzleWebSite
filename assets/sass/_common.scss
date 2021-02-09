@@ -4,17 +4,13 @@ h3 {
     letter-spacing: .05em;
 }
 
-.custom-container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.service-filter-button {
+.serviceFilterButton {
     background-color: #fff;
     color: #222222;
     border-radius: 3px;
-    border: 2px solid #707070;
+    border: 2px solid;
+    border-color: #707070;
     @extend %font-bebas;
     transition: 0.4s ease;
     text-align: center;
@@ -38,6 +34,12 @@ h3 {
     }
 }
 
+.serviceFilterButton-active {
+    color: #fff;
+    background: $color_magenta;
+    border-color: $color_magenta;
+}
+
 .service-filter-button.is-checked {
     border: 2px solid $color_magenta;
     background: $color_magenta;
@@ -46,12 +48,13 @@ h3 {
 
 .innerFilterButton-active {
     color: #FFF;
-    background: #f54785;
+    background: $color_magenta;
+    border-color: $color_magenta;
 }
 
 .buttons-container {
     .innerFilterButton-active {
-        color: #f54785;
+        color: $color_magenta;
 
     }
 }
