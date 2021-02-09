@@ -3,10 +3,8 @@
 
 @import "_variables";
 @import "_common";
+@import "_elements";
 
-
-// Services pages
-@import "./service/main-service-page";
 
 
 //импорт стилей главной
@@ -14,8 +12,10 @@
 @import "./front-page/_2ndsection";
 @import "./front-page/_3rdsection";
 @import "./front-page/_4thsection";
-@import "_elements";
 
+// Services pages
+@import "./service/main-service-page";
+@import "./service/smm";
 
 //Стили остальных страниц
 @import "./pages/_contactPage";

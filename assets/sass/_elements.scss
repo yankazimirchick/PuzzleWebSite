@@ -15,8 +15,17 @@
         transition: 0.01s;
 
         .paralax-inner {
-            max-width: 540px;
             z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            z-index: 3;
+            font-size: 1.285714285714286em;
+        }
+
+        .text-paralax {
+            text-align: center
         }
 
         h1 {
@@ -38,9 +47,16 @@
         height: 70vh;
         z-index: 1;
     }
+
+    .text-paralax {
+        color: #FFF;
+    }
 }
 
-
+%additional-block {
+    justify-content: space-between;
+    height: 200px;
+}
 
 .case-item::after {
     position: absolute;
