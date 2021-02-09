@@ -33,7 +33,7 @@
             @extend %color-white;
             font-weight: 700;
             text-transform: capitalize;
-            font-size: 72px;
+            font-size: calc(30px + 3vw);
             line-height: 36px;
         }
     }
