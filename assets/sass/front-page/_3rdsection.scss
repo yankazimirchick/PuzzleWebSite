@@ -123,6 +123,20 @@
             @extend %font-roboto;
         }
 
+        .slider-for-text-blog {
+            background: #2e7475 no-repeat center;
+            padding: 15px 15px;
+            width: 33%;
+            min-height: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: 700px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
     }
 
     .big-arrow {

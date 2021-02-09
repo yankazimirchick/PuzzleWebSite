@@ -1,4 +1,6 @@
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     letter-spacing: .05em;
 }
 
@@ -45,6 +47,13 @@ h1, h2, h3 {
 .innerFilterButton-active {
     color: #FFF;
     background: #f54785;
+}
+
+.buttons-container {
+    .innerFilterButton-active {
+        color: #f54785;
+
+    }
 }
 
 .service-filter-button-item {
