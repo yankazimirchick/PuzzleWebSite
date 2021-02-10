@@ -25,6 +25,7 @@ $container-max-widths: (
 // Services pages
 @import "./service/main-service-page";
 @import "./service/smm";
+@import "./service/seo";
 
 //Стили остальных страниц
 @import "./pages/_contactPage";
