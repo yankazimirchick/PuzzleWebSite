@@ -4,10 +4,11 @@ h3 {
     letter-spacing: .05em;
 }
 
-.custom-container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
+.accordion__rotate-custom-plus {
+    
+    &::after {
+        transform: translateY(-50%) rotate(90deg) !important;
+    }
 }
 
 .service-filter-button {

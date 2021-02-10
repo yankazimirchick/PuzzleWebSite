@@ -40,7 +40,7 @@
     }
 
     @media (max-width: 770px) {
-        height: 120px;
+        min-height: 120px;
     }
 
     .advantages-table-wrapper {
@@ -87,7 +87,7 @@
 
         .result-title {
             font-family: $font-bebas;
-            font-size: calc(20px + 1.3vw);
+            font-size: $title-font-size;
         }
     }
 
@@ -109,9 +109,17 @@
 
     .slick-prev-small {
         left: 30px;
+
+        @media (max-width: 770px) {
+            left: -10px;
+        }
     }
     .slick-next-small {
         right: 30px;
+
+        @media (max-width: 770px) {
+            right: -10px;
+        }
     }
     .slick-dots {
         
@@ -133,13 +141,28 @@
     margin-bottom: 50px;
     padding: 0 30px;
 
+    @media (max-width: 770px) {
+        margin-top: 100px;
+    }
+    @media (max-width: 770px) {
+        padding: 0 !important;
+
+        .container {
+            padding: 0;
+        }
+    }
+
     .packages-header {
         height: 80px;
         margin-bottom: 20px;
 
+        @media (max-width: 770px) {
+            height: 50px;
+        }
+
         .packages-title {
             font-family: $font-bebas;
-            font-size: calc(20px + 1.3vw);
+            font-size: $title-font-size;
             text-align: center;
             color: $color_gray;
         }
@@ -155,7 +178,7 @@
 
             .pack-wrapper {
                 box-shadow: unset !important;
-                margin: 0 15px;
+                margin: 0 7px;
             }
 
             .slick-next-small {
@@ -184,7 +207,7 @@
                 
                 .pack-title {
                     font-family: $font-bebas;
-                    font-size: calc(20px + 1.3vw);
+                    font-size: $title-font-size;
                     font-weight: 700;
                     text-align: center;
                     color: $color-white;
@@ -213,7 +236,7 @@
                             transform: translateY(-50%);
                             width: 30px;
                             height: 30px;
-                            background-position: 0px 0px;
+                            background-position: bottom;
                         }
                     }
                 }
@@ -274,7 +297,10 @@
             }
 
             .pack-info {
-                background: url('/assets/img/icon/service_packages/icons8-сложение-26.png') no-repeat;
+                
+                &::before {
+                    background: url('/assets/img/icon/service_packages/icons8-сложение-26.png') no-repeat;
+                }
             }
         }
 
@@ -348,10 +374,10 @@
     }
 
     .panel-collapse {
-        padding-left: 30px;
-        margin: 25px 0;
 
         .panel-body {
+            padding-left: 30px;
+            margin: 25px 0;
             font-size: 15px;
             color: $color-light-gray;
         }
@@ -361,17 +387,42 @@
 
         .panel-heading {
             margin: 0;
+            margin-top: -1px;
             border: 1px solid #eee;
             border-left: 0;
             border-right: 0;
             padding: 20px 0;
 
             .panel-title {
+                position: relative;
                 font-size: 20px;
                 font-family: $font-bebas;
                 margin: 0;
                 padding-left: 30px;
     
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 4px;
+                    background: #a5a5a5;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 10px;
+                    background: #a5a5a5;
+                    left: 13px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    transition: 300ms;
+                }
     
                 a {
                     margin: 1em 0 0;
@@ -387,3 +438,4 @@
         
     }
 }
+
