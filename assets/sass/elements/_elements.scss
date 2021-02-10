@@ -1,0 +1,102 @@
+.paralax-block {
+
+    position: relative;
+
+    .paralax-wrapper {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: 0px 0px;
+        transition: 0.01s;
+
+        .paralax-inner {
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            z-index: 3;
+            font-size: 1.285714285714286em;
+        }
+
+        .text-paralax {
+            text-align: center
+        }
+
+        h1 {
+            @extend %font-bebas;
+            @extend %color-white;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: calc(30px + 3vw);
+            line-height: 36px;
+        }
+    }
+
+    .paralax-overlay {
+        background-color: rgba(0, 0, 0, 0.35);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        z-index: 1;
+    }
+
+    .text-paralax {
+        color: #FFF;
+    }
+}
+
+%additional-block {
+    justify-content: space-between;
+    height: 200px;
+}
+
+.case-item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    transition: 0.4s ease;
+}
+
+.case-item:hover::after {
+    opacity: .75;
+}
+
+.inner-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+}
+
+.inner-text {
+    z-index: 2;
+    color: #fff;
+    transition: 0.6s;
+    @extend %font-bebas;
+}
+
+.case-item:hover {
+
+    .inner-text {
+        font-size: 35px;
+    }
+
+}
+
+.case {}

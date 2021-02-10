@@ -4,6 +4,12 @@ h3 {
     letter-spacing: .05em;
 }
 
+.accordion__rotate-custom-plus {
+    
+    &::after {
+        transform: translateY(-50%) rotate(90deg) !important;
+    }
+}
 
 .serviceFilterButton {
     background-color: #fff;
