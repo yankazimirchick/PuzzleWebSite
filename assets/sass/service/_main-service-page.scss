@@ -40,9 +40,11 @@
 .info-table {
 
     .info-table-wrapper {
+        margin: 80px auto   ;
 
         .table-item {
             display: flex;
+            margin-bottom: 15px;
 
             &:hover {
 
@@ -51,8 +53,12 @@
                 }
             }
 
+            .col-md-4 {
+                padding: 0;
+            }
+
             .left-side-block {
-                padding: 0 15px;
+                padding: 0;
                 width: 80px;
 
                 .table-img {
@@ -64,6 +70,7 @@
             }
             .right-side-block {
                 padding: 0 15px;
+                padding-right: 0;
     
                 .table-title a {
                     font-family: $font-bebas;
@@ -71,10 +78,7 @@
                     color: #222;
                     font-weight: 700;
                     letter-spacing: .05em;
-                }   
-                .table-text {
-    
-                }
+                }  
             }
         }
 

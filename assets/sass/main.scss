@@ -6,6 +6,9 @@ $container-max-widths: (
     xxl: 1170px
 );
 
+
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 //@import "../fonts/stylesheet.css"; //шрифт
 
@@ -14,6 +17,7 @@ $container-max-widths: (
 @import "./elements/elements";
 @import "./elements/form-elements";
 
+@import "./service/context";
 
 
 //импорт стилей главной

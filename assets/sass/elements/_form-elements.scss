@@ -10,9 +10,13 @@
     background-size: cover;
 }
 
+.footer-form {
+    height: 265px !important;
+}
+
 .form__border-wrapper {
     max-width: 780px;
-    padding: 20px 30px 50px;
+    padding: 26px 30px 30px;
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 1px #4cc0c2;
@@ -44,18 +48,18 @@
     color: red;
 }
 
-.form__title {
+/* .form__title {
     font-family: $font-bebas;
     font-weight: 700;
     font-size: $title-font-size;
     margin: 0;
-}
+} */
 
-.form__sub-title {
+/* .form__sub-title {
     font-family: $text-font;
     font-size: 15px;
     color: $color-light-gray;
-}
+} */
 
 .form__input {
     max-width: 720px;
@@ -90,20 +94,6 @@
     padding: 0 30px;
 }
 
-.cyan-button {
-    padding: 13px 40px;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
-    color: $color-white;
-    background-color: $color_cyan;
-
-    transition: 300ms;
-
-    &:hover {
-        background-color: $color-hover_cyan;
-    }
-}
 /* Primery form elements close */
 
 
@@ -112,6 +102,7 @@
     padding-top: 40px;
     border-top: 1px $color_cyan solid;
     border-bottom: 1px $color_cyan solid;
+    margin: 40px auto;
 
     .form__header {
         padding: 0 15px;
@@ -138,6 +129,7 @@
         .form__title {
             font-size: 25px;
             text-align: center;
+            margin: 0 !important;
         }
     }
 
@@ -146,7 +138,7 @@
     }
 
     .form__border-wrapper {
-        height: 120px;
+        height: 145px;
         overflow: visible;
 
         @media (max-width: 587px) {

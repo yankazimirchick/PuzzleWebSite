@@ -5,20 +5,7 @@
 }
 
 .about-service-block {
-    padding: 60px 0;
-
-    .title-text {
-        padding-left: 10px;
-        font-family: $font-bebas;
-        font-size: 32px;
-    }
-
-    .text {
-        font-family: $text-font;
-        font-size: 15px;
-        line-height: 23px;
-        color: $color-light-gray;
-    }
+    margin: 60px auto;
 
     .right-side-block {
 
@@ -29,15 +16,7 @@
 }
 
 .advantages-table {
-
-    .table-title {
-        height: 100px;
-        margin: 0 auto;
-        padding: 0 15px;
-        text-align: center;
-        font-family: $font-bebas;
-        font-size: 39px;
-    }
+    margin: 80px auto;
 
     @media (max-width: 770px) {
         min-height: 120px;
@@ -60,36 +39,21 @@
                 padding-right: 15px;
             }
 
-            .cell-title {
+            /* .cell-title {
                 margin-left: 15px;
                 font-family: $font-bebas;
-            }
+            } */
         }
         
         .cell-body {
             margin-top: 15px;
-
-            .cell-text {
-                color: $color-light-gray;
-                font-size: 15px;
-                font-family: $color-light-gray;
-                text-align: left;
-            }
         }
     }
 }
 
 .result-graphic {
-    margin-top: 70px;
-
-
-    .result-header {
-
-        .result-title {
-            font-family: $font-bebas;
-            font-size: $title-font-size;
-        }
-    }
+    margin: 60px auto;
+    margin-bottom: 100px;
 
     .result-slider-wrapper {
         width: 100%;
@@ -137,8 +101,7 @@
 }
 
 .service-packages {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin: 80px auto;
     padding: 0 30px;
 
     @media (max-width: 770px) {
@@ -158,13 +121,6 @@
 
         @media (max-width: 770px) {
             height: 50px;
-        }
-
-        .packages-title {
-            font-family: $font-bebas;
-            font-size: $title-font-size;
-            text-align: center;
-            color: $color_gray;
         }
     }
 
@@ -320,7 +276,7 @@
             .button-pack-order {
                 background: $color_magenta;
             }
-            .pack-info {
+            .pack-info{
                 &::before {
                     background: url('../img/icon/service_packages/icons8-p-26-1.png') no-repeat;
                 }
@@ -359,7 +315,7 @@
 }
 
 .faq-block {
-    margin-top: 50px;
+    margin: 80px auto;
     
     .faq-title {
         
@@ -441,6 +397,59 @@
 
 
         
+    }
+}
+
+.received-bonuses {
+    margin: 60px auto;
+
+    .received-bonuses__wrapper {
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+        .received-bonuses__body_left-side {
+
+            .received-bonuses__img-wrapper {
+                max-width: 510px;
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .received-bonuses__body_right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 270px;
+
+            .received-bonuses__bonus {
+                display: flex;
+                align-items: center;
+
+                .received-bonuses_icon {
+                    width: 40px;
+                    height: 41px;
+                }
+            }
+
+            h5 {
+                margin: 0;
+                padding-left: 25px;
+                font-family: $font-bebas;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                line-height: 1.2;
+            }
+        }
     }
 }
 
