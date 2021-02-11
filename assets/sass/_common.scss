@@ -4,6 +4,15 @@ h3 {
     letter-spacing: .05em;
 }
 
+.tabs-info {
+    list-style: initial;
+    padding-left: 45px;
+    margin: 15px 0;
+
+    li {
+    }
+}
+
 .accordion__rotate-custom-plus {
     
     &::after {
