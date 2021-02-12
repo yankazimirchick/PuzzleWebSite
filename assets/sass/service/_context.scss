@@ -59,6 +59,16 @@ h3.title-text {
     font-size: calc(15px + 1vw);
 }
 
+h4.title-text {
+    font-size: calc(20px + 0.5vw);
+}
+h5.title-text {
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: initial;
+}
+
+
 .button-to-order-block {
     margin: 60px auto;
 
@@ -99,4 +109,62 @@ h3.title-text {
 
 .mb0 {
     margin-bottom: 0 !important;
+}
+
+.hint-wrapper {
+    margin: 60px 15px;
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: verdana, 'open sans', sans-serif;
+    color: #FFF;
+    box-shadow: 0px 1px 5px #999;
+    border-radius: 5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 23px;
+        left: 20px;
+        top: 15px;
+        background-image: url('');
+    }
+}
+
+.pink-background {
+    background-color: $color_magenta;
+}
+
+.smm-table-advantage {
+    margin: 60px 0;
+}
+
+.bloger-page__info-table .text {
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.bloger-page__info-table .left-side-block {
+    display: flex;
+    margin: 0 auto;
+
+    img {
+        margin: 20px auto;
+    }
+
+}
+
+
+.bc-gray-light {
+    background-color: #BABABA;
 }
