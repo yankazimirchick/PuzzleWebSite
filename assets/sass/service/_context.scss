@@ -149,6 +149,19 @@ h5.title-text {
     margin: 60px 0;
 }
 
+.target-page__info-table .left-side-block {
+    display: flex;
+    margin: 0 auto;
+
+    img {
+        margin: 20px auto;
+    }
+}
+
+.h0 {
+    height: 0 !important;
+}
+
 .bloger-page__info-table .text {
     max-width: 290px;
     margin: 0 auto;
@@ -167,4 +180,12 @@ h5.title-text {
 
 .bc-gray-light {
     background-color: #BABABA;
+}
+
+.mw950 {
+    max-width: 950px;
+}
+
+.color-black {
+    color: black;
 }
