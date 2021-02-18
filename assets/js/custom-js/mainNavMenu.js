@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     if (window.screen.width <= 1200) {
+        console.log('screen < 1200')
         // Settings begin
         let timeShowingFirstLevelItems = 200;
         // settings close
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let firstLevelCounter = 0;
 
         openButtonMobileMenu.addEventListener('click', () => {
+            console.log('click-2')
             mainMenuContainer.classList.add('show-menu');
             header.style.position = 'unset';
             html.style.overflow = 'hidden';
