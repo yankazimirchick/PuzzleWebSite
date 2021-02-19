@@ -2,6 +2,7 @@
 
 ## Смотреть онлайн без смс и регистрации:
 Для просмотра перейдите по  **[ссылке](https://yankazimirchick.github.io/PuzzleWebSite/ "Перейти для просмотра")**
+Список задач  **[Trello](https://trello.com/invite/b/SIo1fgsl/f6daba00857c2f7c47ee12498313c1d8/puzzle-agency-%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8 "Перейти для просмотра")**
 
 
 ## Что можно доработать на главной:
