@@ -325,7 +325,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- О КОМПАНИИ-->
         <section class="bg-section-light">
             <div class="container-fluid">
@@ -592,6 +592,71 @@
     </main>
 
 
+
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background: linear-gradient( 108.32deg , rgba(245,71,133,1) 0%, rgba(255,193,7,1) 100%);">
+                <div class="modal-header" style="border-bottom: unset;position: absolute;right: 0;z-index: 2;">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="border: unset;">
+                    <div class="row">
+                        <div class="col-md-12"><h2>Для вас есть подарок!</h2></div>
+                        <div class="col-md-6" style="
+                        color: #fff;
+                    ">
+                            
+                            <p>Оставьте ваш номер, что бы получить бесплатное стилистическое оформление</p>
+                        </div>
+                        <div class="col-md-6"><img style="
+                            width: 100%;
+                        " src="assets/img/icon/arrow-down.png" alt=""></div>
+                        <div class="col-md-12"><p class="h6">*акция действует при подписании договора на социальные сети    </p> </div>
+                        <div class="col-md-6"><input style="height: 50px;width: 100%;max-width: 340px;padding: 7px 25px;margin-bottom: 8px;border: 1px solid #fff;border-radius: 3px;outline: none;color: #fff;font-size: 18px;
+                line-height: 22px;" placeholder="Введите номер" type="text"></div>
+                        <div class="col-md-6"><button type="submit"
+                                style="
+                display: flex;align-items: center;justify-content: center;
+                width: 100%;max-width: 340px;height: 50px;
+                border: none;background-color: #fff;border-radius: 3px;transition: .3s;outline: none;color: #4733B7;cursor: pointer;font-size: 20px;line-height: 24px;font-weight: 700; ">Получить</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end-->
+ 
+
+    <script>
+        $show=true;
+        window.onload = function() {
+         function foo(){
+          $('#exampleModalCenter').modal('show')
+            console.log('function is being called')
+          }
+    
+           setInterval(function(){
+            if($show==true){
+                foo()
+            }
+            $show=false;
+           }, 30000)
+            };
+    </script>
+                
+
+
+
     <footer>
         <div class="footer-wrapper">
             <div class="container">
@@ -703,5 +768,8 @@
     <script src="assets/js/custom-js/mainNavMenu.js"></script>
     <script src="assets/dist/bootstrap.min.js"></script>
 </body>
+
+
+
 
 </html>
