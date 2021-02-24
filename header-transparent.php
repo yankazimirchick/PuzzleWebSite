@@ -71,14 +71,15 @@
 					<div class="left-side-block">
 						<a style="<?php echo esc_url( home_url( '/' ) ); ?>"
 							href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo-wrapper">
+							
+							<?php if( get_field('logo_additional', 'option') ): ?>
+						
 
-
-
-
-							<img alt="<?php echo (bloginfo( 'name' ).' - '.get_bloginfo( 'description', 'display' )) ?>" src="
-								<?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); 
-								echo $custom_logo__url[0]; ?>" 
+							<img alt="<?php echo (bloginfo( 'name' ).' - '.get_bloginfo( 'description', 'display' )) ?>" src="<?= get_field('logo_additional', 'option'); ?>" 
 							class="header-logo">
+
+							<?php endif; ?>
+
 						</a>
 					</div>
 					<div class="center-side-block">
