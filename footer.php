@@ -47,6 +47,93 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+    <div class="modal fade" id="form-modal-window" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Оставьте заявку и мы вам перезвоним</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="footer-form__body">
+                    <div class="footer-form__field">
+                        <div class="field">
+                            <div><label for="footer-form__number" class="form-label h0">
+                                Номер телефона:<span class="label__hint_red">*</span>
+                            </label></div>
+                            <input type="text" placeholder="+375(xx)xxx-xx-xx" id="footer-form__number" class="form__input">
+                        </div>  
+                    </div>
+                </div>
+                <div class="footer-form__body">
+                    <div class="footer-form__field">
+                        <div class="field mt-3">
+                            <div><label for="footer-form__number" class="form-label h0">
+                                Ваше Имя:<span class="label__hint_red">*</span>
+                            </label></div>
+                            <input type="text" placeholder="" class="form__input">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="cyan-button">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="modal fade" id="bloger-form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Оставьте заявку и мы вам перезвоним</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="footer-form__body">
+                    <div class="footer-form__field">
+                        <div class="field">
+                            <div><label for="footer-form__number" class="form-label h0">
+                                Номер телефона:<span class="label__hint_red">*</span>
+                            </label></div>
+                            <input type="text" placeholder="+375(xx)xxx-xx-xx" class="form__input">
+                        </div>  
+                    </div>
+                </div>
+                <div class="footer-form__body">
+                    <div class="footer-form__field">
+                        <div class="field mt-3">
+                            <div><label for="footer-form__number" class="form-label h0">
+                                Instagram*:<span class="label__hint_red">*</span>
+                            </label></div>
+                            <input type="text" placeholder="" class="form__input">
+                        </div>  
+                    </div>
+                </div>
+                <div class="footer-form__body">
+                    <div class="footer-form__field">
+                        <div class="field mt-3">
+                            <div><label for="footer-form__number" class="form-label h0">
+                                Ваше Имя:<span class="label__hint_red">*</span>
+                            </label></div>
+                            <input type="text" placeholder="" class="form__input">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="cyan-button">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </footer>
         
 

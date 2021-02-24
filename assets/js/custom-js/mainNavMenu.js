@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    if (window.screen.width <= 1200) {
         console.log('screen < 1200')
         // Settings begin
         let timeShowingFirstLevelItems = 200;
@@ -142,5 +141,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 thirdLevelMenu[i].classList.remove('show-third-menu');
             }
         }
-    }
 });
