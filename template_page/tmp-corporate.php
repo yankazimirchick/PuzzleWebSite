@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Корпоративный сайт
+Template Name: РАЗРАБОТКА КОРПОРАТИВНОГО САЙТА
 */
 ?>
 
@@ -31,8 +31,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -41,16 +47,7 @@ if($visibility=='true' ){
 
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/web-site-pages/corporate/мужик-в-офисе.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            РАЗРАБОТКА КОРПОРАТИВНОГО САЙТА
-                        </h1>
-                    </div>
-                </div>
-            </section>
+          
 
             <div class="about-service-block">
                 <div class="container">
