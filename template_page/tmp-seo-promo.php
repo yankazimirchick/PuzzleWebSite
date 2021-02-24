@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: SEO Продвижение
+Template Name: SEO ПРОДВИЖЕНИЕ САЙТОВ
 */
 ?>
 
@@ -31,8 +31,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -220,7 +226,7 @@ if($visibility=='true' ){
                                             <div class="col-sm-6">
                                                 <button class="cyan-button weight-button" data-toggle="modal" data-target="#form-modal-window">ПОЛУЧИТЬ</button>
                                             </div> -->
-                                            <?php [contact-form-7 id="211" title="Контактная форма в body"] ?>
+                                            <?php echo do_shortcode( '[contact-form-7 id="234" title="Контактная форма -  smm"]' ) ?>
                                         </div>
                                     </div>
                                 </div>
@@ -624,7 +630,7 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php [contact-form-7 id="212" title="Контактная форма footer"] ?>
+            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
         </div>
 
     </div>

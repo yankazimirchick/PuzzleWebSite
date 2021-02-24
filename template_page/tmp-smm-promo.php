@@ -31,8 +31,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -40,19 +46,7 @@ if($visibility=='true' ){
 <!-- Блок с паралаксом конец-->
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/smm-page/rawpixel-603653-unsplash.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            SMM ПРОДВИЖЕНИЕ
-                        </h1>
-                        <p class="text-paralax">
-                            Продвижение в социальных сетях — эффективный способ привлечения новых клиентов, повышения узнаваемости Вашего бренда, а также взаимодействия с целевой аудиторией.
-                        </p>
-                    </div>
-                </div>
-            </section>
+          
 
             <div class="about-service-block">
                 <div class="container">
@@ -346,7 +340,7 @@ if($visibility=='true' ){
                                         <div class="col-sm-6">
                                             <input type="submit" class="cyan-button weight-button" value="ПОЛУЧИТЬ">
                                         </div> -->
-                                        <?php [contact-form-7 id="211" title="Контактная форма в body"] ?>
+                                        <?php echo do_shortcode( '[contact-form-7 id="234" title="Контактная форма -  smm"]' ) ?>
                                     </div>
                                 </div>
                             </div>
@@ -457,7 +451,9 @@ if($visibility=='true' ){
                     <input type="submit" class="cyan-button weight-button">
                 </div>
             </div> -->
-            <?php [contact-form-7 id="212" title="Контактная форма footer"] ?>
+            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+           
+           
         </div>
 
     </div>
