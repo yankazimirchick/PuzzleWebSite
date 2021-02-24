@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (panelsLinks.length > 0) {
         let panelsTitle = document.getElementsByClassName('panel-title');
+        let panelCollapse = document.querySelectorAll('.panel-collapse');
+        console.log(panelCollapse)
 
         for (let i = 0; i < panelsLinks.length; i++) {
             panelsLinks[i].addEventListener('click', toogleStatePanel(event, i));
@@ -12,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             let isOpen = false;
 
             return function() {
-                if (isOpen) {
+                if (isOpen && !panelCollapse[i].classList.contains('collapsing')) {
                     isOpen = false;
                     panelsTitle[i].classList.remove('accordion__rotate-custom-plus');
-                }else {
+                }else if (!panelCollapse[i].classList.contains('collapsing')) {
                     isOpen = true;
                     panelsTitle[i].classList.add('accordion__rotate-custom-plus');
                 }
