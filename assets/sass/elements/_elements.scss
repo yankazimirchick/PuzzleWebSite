@@ -3,7 +3,7 @@
     position: relative;
 
     .paralax-wrapper {
-        height: 50vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,8 +14,12 @@
         background-position: 0px 0px;
         transition: 0.01s;
 
-        @media (max-width: 770px) {
-            height: 80vh;
+        @media #{$small_mobile} {
+            height: 40vh;
+        }
+
+        @media #{$large_mobile} {
+            height: 40vh;
         }
 
         .paralax-inner {
@@ -50,11 +54,15 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         z-index: 1;
 
-        @media (max-width: 770px) {
-            height: 80vh;
+        @media #{$small_mobile} {
+            height: 70vh;
+        }
+
+        @media #{$large_mobile} {
+            height: 40vh;
         }
     }
 
