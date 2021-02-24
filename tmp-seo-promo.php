@@ -214,12 +214,13 @@ if($visibility=='true' ){
                                     <div class="form__border-wrapper">
                                         <h3 class="title-text text-center">ПОЛУЧИТЬ МЕСЯЦ БЕСПЛАТНОГО SEO</h3>
                                         <div class="row d-flex justify-content-around mt-4">
-                                            <div class="col-sm-6">
+                                            <!-- <div class="col-sm-6">
                                                 <input type="text" placeholder="+375(xx)xxx-xx-xx" id="fullwidth-form__number" class="form__input">
                                             </div>
                                             <div class="col-sm-6">
                                                 <button class="cyan-button weight-button" data-toggle="modal" data-target="#form-modal-window">ПОЛУЧИТЬ</button>
-                                            </div>
+                                            </div> -->
+                                            <?php [contact-form-7 id="211" title="Контактная форма в body"] ?>
                                         </div>
                                     </div>
                                 </div>
@@ -599,7 +600,7 @@ if($visibility=='true' ){
         </div>
 
         <div class="container form__image-wrapper">
-            <div class="row flex-column px-3">
+            <!-- <div class="row flex-column px-3">
                 <div class="form__border-wrapper footer-form">
                     <div class="form__header">
                         <h3 class="mb0 title text-left">ЗАКАЗАТЬ SEO ПРОДВИЖЕНИЕ</h3>
@@ -621,7 +622,9 @@ if($visibility=='true' ){
                 <div class="form__button-wrapper">
                     <input type="submit" class="cyan-button weight-button">
                 </div>
-            </div>
+            </div> -->
+
+            <?php [contact-form-7 id="212" title="Контактная форма footer"] ?>
         </div>
 
     </div>

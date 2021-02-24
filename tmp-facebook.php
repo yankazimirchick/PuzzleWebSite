@@ -421,7 +421,7 @@ if($visibility=='true' ){
         </div>
 
         <div class="container form__image-wrapper">
-            <div class="row flex-column px-3">
+            <!-- <div class="row flex-column px-3">
                 <div class="form__border-wrapper footer-form">
                     <div class="form__header">
                         <h3 class="title mb0 text-left">ЗАКАЗАТЬ SMM ПРОДВИЖЕНИЕ</h3>
@@ -443,7 +443,9 @@ if($visibility=='true' ){
                 <div class="form__button-wrapper">
                     <input type="submit" class="cyan-button weight-button" data-toggle="modal" data-target="#form-modal-window">
                 </div>
-            </div>
+            </div> -->
+
+            <?php [contact-form-7 id="212" title="Контактная форма footer"] ?>
         </div>
 
         <div class="hint-wrapper">
