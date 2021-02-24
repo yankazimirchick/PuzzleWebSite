@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Интернет Портал
+Template Name: РАЗРАБОТКА САЙТА-ВИЗИТКИ
 */
 ?>
 
@@ -31,44 +31,63 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
 <?}?>
 <!-- Блок с паралаксом конец-->
 
+
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/web-site-pages/corporate/мужик-в-офисе.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            РАЗРАБОТКА ИНТЕРНЕТ-ПОРТАЛА
-                        </h1>
-                    </div>
-                </div>
-            </section>
+           
 
             <div class="about-service-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 left-side-block">
-                            <h2 class="title text-left">– ПОРТАЛ</h2>
+                            <h2 class="title text-left">– САЙТ-ВИЗИТКА</h2>
                             <p class="simple-text text">
-                                Сайт, который предоставляет пользователю различные интерактивные интернет-сервисы, которые работают в рамках этого сайта. Веб-портал может состоять из нескольких сайтов.
+                                Продукт содержащий в себе от 7 до 12 страниц. Позволяющий рассказать о компании, сфере деятельности и контактные данные.    
                             </p>
                             <p class="simple-text text">
-                                Также порталы функционируют как точки доступа к информации в интернете или сайты, которые помогают пользователям в поиске нужной информации. 
+                                Сайты данной категории как правило носят информационно ознакомительный характер и дают возможность рассказать о не большом количестве услуг, товаров или продуктов.
                             </p>
-                            <p class="simple-text text">
-                                Иногда их называют навигационными сайтами.Как правило, порталы выполняют функции поиска, а также предоставляют доступ к различным интернет-сервисам, например электронной почте, ленте новостей и т. д.
+                            <br>
+                            <h3 class="title-text">
+                                САЙТ-ВИЗИТКА ПОДОЙДЕТ К:
+                            </h3>
+                            <ul class="tabs-info">
+                                <li class="text">Малому Бизнесу с небольшим перечнем услуг;</li>
+                                <li  class="text">Индивидуальным предпринимателям;</li>
+                                <li class="text">Молодым компаниям;</li>
+                                <li class="text">Блогерам;</li>
+                            </ul>
+                            <br>
+                            <p class="text">
+                                При разработке сайта визитки у нас. Вы получите качественный современный WEB сайт. Который позволит правильно представлять вашу компанию в интернете и обеспечит возможность работы с клиентами и партнерами.
                             </p>
-                            <h3 class="title">ОТ 500 Y.E.</h3>
+                            <h3 class="title-text">
+                                ОПЦИИ САЙТА-ВИЗИТКИ
+                            </h3>
+                            <ul class="tabs-info">
+                                <li class="text">Количество страниц: От 7 до 12</li>
+                                <li class="text">Адаптивный дизайн: +</li>
+                                <li class="text">Модуль новости: +</li>
+                                <li class="text">Модуль SEO: +</li>
+                                <li class="text">Формы обратной связи: 2 и более</li>
+                            </ul>
+                            <h3 class="title">ОТ 300 Y.E.</h3>
                         </div>
                         <div class="col-sm-6 right-side-block">
-                            <img src="assets/img/web-site-pages/corporate/corporate.jpg" class="img" >
+                            <img src="assets/img/web-site-pages/card-site/card.jpg" class="img" >
                         </div>
                     </div>
                 </div>

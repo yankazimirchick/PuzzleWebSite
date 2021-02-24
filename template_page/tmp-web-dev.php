@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Web Разработка
+Template Name: РАЗРАБОТКА WEB-САЙТОВ
 */
 ?>
 
@@ -31,8 +31,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -40,16 +46,7 @@ if($visibility=='true' ){
 <!-- Блок с паралаксом конец-->
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/webdev.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            РАЗРАБОТКА WEB-САЙТОВ
-                        </h1>
-                    </div>
-                </div>
-            </section>
+           
 
             <div class="about-service-block">
                 <div class="container">

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Блогер
+Template Name: БЛОГЕР НАПРОКАТ
 */
 ?>
 
@@ -31,8 +31,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -42,19 +48,7 @@ if($visibility=='true' ){
 
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/web-site-pages/vk/вконтакте.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            БЛОГЕР НАПРОКАТ
-                        </h1>
-                        <p class="text-paralax">
-                            СОБСТВЕННАЯ БАЗА БЛОГЕРОВ БОЛЕЕ 1000 АККАУНТОВ ПО РБ    
-                        </p>
-                    </div>
-                </div>
-            </section>
+          
 
             <div class="about-service-block">
                 <div class="container">

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Сайт-визитка
+Template Name: РАЗРАБОТКА ИНТЕРНЕТ-МАГАЗИНА
 */
 ?>
 
@@ -18,7 +18,6 @@ if($headertransp=='true' ){
 
 
 
-
 <!-- Блок с паралаксом-->
 <?php 
 // visibility chech
@@ -31,8 +30,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
@@ -41,56 +46,21 @@ if($visibility=='true' ){
 
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/web-site-pages/card-site/pexels-photo-346731.jpeg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            РАЗРАБОТКА САЙТА-ВИЗИТКИ
-                        </h1>
-                    </div>
-                </div>
-            </section>
+          
 
             <div class="about-service-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 left-side-block">
-                            <h2 class="title text-left">– САЙТ-ВИЗИТКА</h2>
                             <p class="simple-text text">
-                                Продукт содержащий в себе от 7 до 12 страниц. Позволяющий рассказать о компании, сфере деятельности и контактные данные.    
+                                «Если вашего бизнеса нет в Интернете, то вас нет в бизнесе…» – известная цитата, которая очень правдиво описывает нынешнее положение вещей в экономике. Электронная коммерция, интернет-банки, сервисы для заказов и доставки еды, а также другие привычные дела сейчас мы делаем онлайн. Покупки мы тоже совершаем в сети из-за существования интернет-магазинов. Чтобы купить вещь, нам нужно просто вбить в поиске нужный запрос, выбрать сайт и сделать заказ. Онлайн-магазин очень серьезно продвинет ваш бизнес и увеличит продажи, так как огромный трафик сегодня приходится на сайты онлайн-сторов.    
                             </p>
                             <p class="simple-text text">
-                                Сайты данной категории как правило носят информационно ознакомительный характер и дают возможность рассказать о не большом количестве услуг, товаров или продуктов.
+                                Создание интернет-магазина важно для того, чтобы покупатели могли купить какие-то товары по сети. Он имеет каталог, каждый товар описывается с помощью карточки, а также специальные фильтры для более быстрого поиска нужного продукта или вещи. После того, как покупатель выберет то, что ему понравилось, то он заносит этот товар в корзину, чтобы дальше оформить заказ. После он оплачивает его благодаря онлайн-сервису или заполняет форму для самовывоза, доставки и т.д. То есть после этапа заказа начинается товарная логистика, и она уже зависит от того, насколько много внимания вы уделили разработке магазина и его функционала.
                             </p>
-                            <br>
-                            <h3 class="title-text">
-                                САЙТ-ВИЗИТКА ПОДОЙДЕТ К:
-                            </h3>
-                            <ul class="tabs-info">
-                                <li class="text">Малому Бизнесу с небольшим перечнем услуг;</li>
-                                <li  class="text">Индивидуальным предпринимателям;</li>
-                                <li class="text">Молодым компаниям;</li>
-                                <li class="text">Блогерам;</li>
-                            </ul>
-                            <br>
-                            <p class="text">
-                                При разработке сайта визитки у нас. Вы получите качественный современный WEB сайт. Который позволит правильно представлять вашу компанию в интернете и обеспечит возможность работы с клиентами и партнерами.
-                            </p>
-                            <h3 class="title-text">
-                                ОПЦИИ САЙТА-ВИЗИТКИ
-                            </h3>
-                            <ul class="tabs-info">
-                                <li class="text">Количество страниц: От 7 до 12</li>
-                                <li class="text">Адаптивный дизайн: +</li>
-                                <li class="text">Модуль новости: +</li>
-                                <li class="text">Модуль SEO: +</li>
-                                <li class="text">Формы обратной связи: 2 и более</li>
-                            </ul>
-                            <h3 class="title">ОТ 300 Y.E.</h3>
                         </div>
                         <div class="col-sm-6 right-side-block">
-                            <img src="assets/img/web-site-pages/card-site/card.jpg" class="img" >
+                            <img src="assets/img/store-474x510.jpg" class="img" style="max-width: 480px">
                         </div>
                     </div>
                 </div>

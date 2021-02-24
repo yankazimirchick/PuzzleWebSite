@@ -22,7 +22,7 @@ if($headertransp=='true' ){
 
 
 <!-- Блок с паралаксом-->
-<?php
+<?php 
 // visibility chech
 $visibility = get_field('background_visibility');
 if($visibility=='true' ){
@@ -33,8 +33,14 @@ if($visibility=='true' ){
         class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-                <?php the_field('b1-background_text'); ?>
-            </h1>
+            <?php the_field('b1-background_text'); ?>
+            </h1> 
+            <?php if( get_field('b1-background_subtext') ): ?>
+            <p class="text-paralax">
+            <?php the_field('b1-background_subtext'); ?>
+                        </p> 
+            <?php endif; ?>
+                            
         </div>
     </div>
 </section>
