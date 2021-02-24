@@ -393,6 +393,8 @@ function theme_name_scripts() {
 	wp_enqueue_script( 'script-main', get_template_directory_uri() . '/assets/js/main.js');
 	wp_enqueue_script( 'script-mainNavMenu', get_template_directory_uri() . '/assets/js/custom-js/mainNavMenu.js');
 	wp_enqueue_script( 'script-bootstrap', get_template_directory_uri() . '/assets/dist/bootstrap.min.js');	
+	wp_enqueue_script( 'sliders', get_template_directory_uri() . '/assets/js/custom-js/sliders.js');	
+	wp_enqueue_script( 'modal-window', get_template_directory_uri() . '/assets/js/custom-js/modalWindow.js');	
 }
 function my_deregister_style () {
 	if ( is_page ('6') ) {//стили на главной(8)		
