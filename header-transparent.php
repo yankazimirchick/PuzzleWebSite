@@ -72,8 +72,7 @@
 						<a style="<?php echo esc_url( home_url( '/' ) ); ?>"
 							href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo-wrapper">
 							
-							<?php if( get_field('logo_additional', 'option') ): ?>
-						
+							<?php if( get_field('logo_additional', 'option') ): ?>						
 
 							<img alt="<?php echo (bloginfo( 'name' ).' - '.get_bloginfo( 'description', 'display' )) ?>" src="<?= get_field('logo_additional', 'option'); ?>" 
 							class="header-logo">

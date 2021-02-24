@@ -456,3 +456,46 @@ function my_acf_op_init() {
         ));
     }
 }
+
+
+//ТАКСОНОМИЯ ПроектЫ
+
+function project_init() {
+	$args = array(
+	'label' => 'Проекты',
+	'labels'                => array(
+		'name'    => 'Проекты',
+		'add_new' => 'Добавить Проект',
+		'edit_item'          => 'Редактировать проект',
+	),
+	
+	'public' => true,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'rewrite' => array('slug' => 'project'),
+	'query_var' => true,
+	'menu_icon' => 'dashicons-portfolio',
+	'supports' => array(
+	'title',
+	'editor',
+	'thumbnail',
+	'page-attributes',)
+	);
+	register_post_type( 'project', $args );
+	flush_rewrite_rules();
+	}
+	add_action( 'init', 'project_init' );
+	register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории", "singular_label" => "project item", "rewrite" => true));
+	function true_custom_fields2() {
+		add_post_type_support( 'project', 'custom-fields'); // в качестве первого параметра укажите название типа поста
+	}
+	 
+add_action('init', 'true_custom_fields2');
+add_action( 'admin_init', 'add_project_tax' );
+
+function add_project_tax() 
+{
+    add_post_type_support( 'project', 'page-attributes' );
+}
+
