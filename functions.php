@@ -436,3 +436,66 @@ function se343581_add_preload_tag()
 	get_template_directory_uri().('/assets/fonts/font.css') .
          '" as="style">';
 }
+
+
+
+
+add_action('acf/init', 'my_acf_op_init');
+function my_acf_op_init() {
+
+    // Check function exists.
+    if( function_exists('acf_add_options_page') ) {
+
+        // Register options page.
+        $option_page = acf_add_options_page(array(
+            'page_title'    => __('Основные настройки темы'),
+            'menu_title'    => __('Настройки темы'),
+            'menu_slug'     => 'theme-general-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false
+        ));
+    }
+}
+
+
+//ТАКСОНОМИЯ ПроектЫ
+
+function project_init() {
+	$args = array(
+	'label' => 'Проекты',
+	'labels'                => array(
+		'name'    => 'Проекты',
+		'add_new' => 'Добавить Проект',
+		'edit_item'          => 'Редактировать проект',
+	),
+	
+	'public' => true,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'rewrite' => array('slug' => 'project'),
+	'query_var' => true,
+	'menu_icon' => 'dashicons-portfolio',
+	'supports' => array(
+	'title',
+	'editor',
+	'thumbnail',
+	'page-attributes',)
+	);
+	register_post_type( 'project', $args );
+	flush_rewrite_rules();
+	}
+	add_action( 'init', 'project_init' );
+	register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории", "singular_label" => "project item", "rewrite" => true));
+	function true_custom_fields2() {
+		add_post_type_support( 'project', 'custom-fields'); // в качестве первого параметра укажите название типа поста
+	}
+	 
+add_action('init', 'true_custom_fields2');
+add_action( 'admin_init', 'add_project_tax' );
+
+function add_project_tax() 
+{
+    add_post_type_support( 'project', 'page-attributes' );
+}
+
