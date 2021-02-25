@@ -467,7 +467,7 @@ function project_init() {
 		'add_new' => 'Добавить Проект',
 		'edit_item'          => 'Редактировать проект',
 	),
-	
+	'has_archive'=> true,
 	'public' => true,
 	'show_ui' => true,
 	'capability_type' => 'post',
@@ -484,17 +484,14 @@ function project_init() {
 	register_post_type( 'project', $args );
 	flush_rewrite_rules();
 	}
-	add_action( 'init', 'project_init' );
-	register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории", "singular_label" => "project item", "rewrite" => true));
-	function true_custom_fields2() {
+
+add_action( 'init', 'project_init' );
+
+register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории", "singular_label" => "project item", "rewrite" => true));
+/*
+function true_custom_fields() {
 		add_post_type_support( 'project', 'custom-fields'); // в качестве первого параметра укажите название типа поста
-	}
-	 
-add_action('init', 'true_custom_fields2');
-add_action( 'admin_init', 'add_project_tax' );
-
-function add_project_tax() 
-{
-    add_post_type_support( 'project', 'page-attributes' );
 }
-
+	 
+add_action('init', 'true_custom_fields');
+*/

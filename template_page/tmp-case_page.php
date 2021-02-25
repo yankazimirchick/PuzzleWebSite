@@ -47,6 +47,41 @@ if($visibility=='true' ){
 
 
 
+
+
+
+
+
+
+
+<?php
+global $post; // не обязательно
+
+// 5 записей из рубрики 7
+$myposts = get_posts( array(
+	'post_type' => 'project',
+	
+) );
+
+foreach( $myposts as $post ){
+
+
+	setup_postdata( $post );
+		echo the_permalink();
+	echo the_post();
+	echo ('<br>');
+	// стандартный вывод записей
+}
+
+wp_reset_postdata(); // сбрасываем переменную $post
+?>
+
+
+
+
+
+
+
 <div id="case_section" class="servicesContainer container-fluid bg-section-white ">
     <div class="container-fluid servicesTabsContainer">
         <div class="row">
@@ -114,7 +149,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -123,7 +158,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +167,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +176,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +185,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +232,7 @@ if($visibility=='true' ){
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
                                 <h3 class="inner-text">Rancho.store.ru</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +242,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Rancho.store.ru</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +252,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Rancho.store.ru</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -226,7 +261,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Rancho.store.ru</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +270,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Rancho.store.ru</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -263,7 +298,7 @@ if($visibility=='true' ){
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +307,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -281,7 +316,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -290,7 +325,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -299,7 +334,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -308,7 +343,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">Belysad.by</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -355,7 +390,7 @@ if($visibility=='true' ){
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
                                 <h3 class="inner-text">TradingHouse</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -365,7 +400,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">TradingHouse</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -375,7 +410,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">TradingHouse</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -385,7 +420,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">TradingHouse</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
@@ -395,7 +430,7 @@ if($visibility=='true' ){
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
                                 <h3 class="inner-text">TradingHouse</h3>
-                                <a class="inner-link" href="project.html"></a>
+                                <a class="inner-link" href="/project/"></a>
                             </div>
                         </div>
                     </div>
