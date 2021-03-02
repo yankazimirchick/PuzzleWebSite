@@ -62,16 +62,47 @@ $myposts = get_posts( array(
 	'post_type' => 'project',
 	
 ) );
+echo('<pre>');
+//print_r($myposts);
+echo('</pre>');
 
 foreach( $myposts as $post ){
 
 
-	setup_postdata( $post );
+	    setup_postdata( $post );
 		echo the_permalink();
-	echo the_post();
+	    
+       
+        echo('<pre>');        
+        print_r('имя поста: '.$post->post_title);
+        echo('<br>');
+        $item=wp_get_post_terms( $post->ID, 'projects', array('fields' => 'all'));
+        print_r('слаг: ');
+        foreach($item as $itemcat){
+            print_r($itemcat->slug.' ');
+        }
+        print_r('<br>');
+
+        print_r('имя: ');
+        foreach($item as $itemcat){
+            print_r($itemcat->name.'  ');
+        }
+        print_r('<br>');
+
+        echo('фото : '.$thumbnail = get_the_post_thumbnail_url($post->ID));
+        echo('</pre>');       
+        echo('<br>');      
+        
+    // $post_id будет содержать ID текущего в цикле поста
+    //$term_list = wp_get_post_terms( 2647, 'post_tag', array('fields' => 'all') );
+
+     
 	echo ('<br>');
 	// стандартный вывод записей
 }
+
+
+
 
 wp_reset_postdata(); // сбрасываем переменную $post
 ?>
