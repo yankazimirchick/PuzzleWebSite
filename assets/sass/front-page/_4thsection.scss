@@ -84,9 +84,11 @@
         @media #{$small_mobile} {
             padding: 0;
             width: 100%;
-            position: unset;
+            position: relative;
             overflow: hidden;
             padding: 30px;
+            bottom: unset;
+            right: unset;
         }
 
         @media #{$large_mobile} {
@@ -95,6 +97,8 @@
             position: unset;
             overflow: hidden;
             padding: 30px;
+            bottom: unset;
+            right: unset;
         }
 
 
@@ -104,7 +108,8 @@
             letter-spacing: 3.6px;
             opacity: 1;
             @extend %font-bebas;
-            font-size: 32px;
+            font-size: 35px;
+            color: #222222;
         }
 
     }

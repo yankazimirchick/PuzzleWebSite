@@ -38,14 +38,23 @@ if($visibility=='true' ){
 
 
 
-Страница проекта
-	<main id="primary" class="site-main">
+
+
+	<main id="primary"  class="site-main container">
+
+
+    <div class="container mt-5">
+     
+        //Страница проекта</div>
 
 		<?php
+        echo the_content();
+        
 		while ( have_posts() ) :
 			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
+           
+           
+			//get_template_part( 'template-parts/content', get_post_type() );
 
 			
 

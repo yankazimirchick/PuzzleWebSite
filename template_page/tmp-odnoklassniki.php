@@ -64,19 +64,20 @@ if($visibility=='true' ){
                             </p>
                         </div>
                         <div class="col-sm-6 right-side-block d-flex">
-                            <img src="assets/img/web-site-pages/o/ok.ru_-425x350.png" class="m-auto img" style="width: auto; max-width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/odnoklassniki.png" class="m-auto img" style="width: auto; max-width: 100%;">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="why-service-block ">
+                <div class="container">
                 <h2 class="title">
                     ВАМ НУЖНО СОЗДАТЬ АККАУНТ В ОДНОКЛАССНИКИ, ЕСЛИ ВАШ БИЗНЕС СВЯЗАН С:
                 </h2>
                 <div class="row">
-                    <div class="col-md-3 d-flex">
-                        <img src="icon" alt="" class="m-auto">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                        <span class="color-cyan icon-shopping-bag"></span>
                     </div>
                     <div class="col-md-9">
                         <h3 class="title-text">
@@ -86,8 +87,8 @@ if($visibility=='true' ){
                             По статистике, 60 % всех пользователей «Одноклассники» – женщины. Это хороший повод воспользоваться возможностью и раскрутить бизнес по продаже одежды, товаров для дома, детей, косметику и т.д. Также, если вы владелец салона красоты или спа, то продвижение услуг в Одноклассниках – отличная реклама.
                         </p>
                     </div>
-                    <div class="col-md-3 d-flex">
-                        <img src="icon" alt="" class="m-auto">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                        <span class="color-magenta icon-cloud-check"></span>
                     </div>
                     <div class="col-md-9">
                         <h3 class="title-text">
@@ -97,8 +98,8 @@ if($visibility=='true' ){
                             Если вы хотите заказать услугу раскрутка групп в Одноклассниках, то можете не сомневаться – эта социальная сеть отлично подойдет для рекламы. Пользователям доступна оплата товаров с помощью банковской карты, которую они могут привязать к своему аккаунту. Чтобы расплатиться, клиентам нужно будет просто авторизоваться на сайте через страничку в Одноклассники. Пэтому продвижение рекламы ваших товаров из интернет-магазина в Одноклассниках будет работать эффективно.
                         </p>
                     </div>
-                    <div class="col-md-3 d-flex">
-                        <img src="icon" alt="" class="m-auto">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                        <span class="color-yellow icon-gamepad"></span>
                     </div>
                     <div class="col-md-9">
                         <h3 class="title-text">
@@ -109,6 +110,8 @@ if($visibility=='true' ){
                         </p>
                     </div>
                 </div>
+                </div>
+                
             </div>
 
         <div class="service-packages">
@@ -120,8 +123,8 @@ if($visibility=='true' ){
                 </div>
             </div>
             <div class="container">
-                <div class="packages-wrapper">
-                    <div class="pack-wrapper pack-min">
+                <div class="row packages-wrapper">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-min">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МИНИМАЛЬНЫЙ
@@ -154,7 +157,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-standart">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-standart">
                         <div class="pack-header">
                             <h3 class="pack-title ">
                                 СТАНДАРТ
@@ -187,7 +190,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-max">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-max">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МАКСИМУМ
@@ -235,7 +238,7 @@ if($visibility=='true' ){
                     <div class="row">
                         <div class="col-md-3 p-md-0">  
                             <div class="cell-header flex-column">
-                                <img src="" alt="" class="cell-icon m-auto">
+                            <span class="color-magenta icon-bubble2"></span>
                                 <h5 class="title-text text-center">
                                     СПОСОБНОСТЬ ОПОВЕЩАТЬ ПОДПИСЧИКОВ
                                 </h5>
@@ -248,7 +251,7 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 p-md-0">  
                             <div class="cell-header flex-column">
-                                <img src="" alt="" class="cell-icon m-auto">
+                            <span class="color-cyan icon-bubbles4"></span>
                                 <h5 class="title-text text-center">	
                                     КОНТАКТИРОВАТЬ С ЦЕЛЕВОЙ АУДИТОРИЕЙ
                                 </h5>
@@ -261,7 +264,7 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 p-md-0"> 
                             <div class="cell-header flex-column">
-                                <img src="" alt="" class="cell-icon m-auto">
+                            <span class="color-cyan icon-mail-forward"></span>
                                 <h5 class="title-text text-center">	
                                     ОРИЕНТАЦИЯ НА МОТИВИРОВАННЫХ КЛИЕНТОВ
                                 </h5>
@@ -274,7 +277,8 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 p-md-0">  
                             <div class="cell-header flex-column">
-                                <img src="" alt="" class="cell-icon m-auto">
+                            <span class="color-yellow icon-cart"></span>
+                            
                                 <h5 class="title-text text-center">	
                                     ИСПОЛЬЗОВАНИЕ УДОБНЫХ ВИДЖЕТОВ
                                 </h5>
@@ -397,7 +401,7 @@ if($visibility=='true' ){
                         </ul>
                     </div>
                     <div class="col-sm-4 right-side-block d-flex">
-                        <img src="assets/img/web-site-pages/o/ok2.png" class="m-auto img" style="width: auto; max-width: 100%;">
+                        <img src="/wp-content/uploads/2021/04/ok2.png" class="m-auto img" style="width: auto; max-width: 100%;">
                     </div>
                 </div>
             </div>
@@ -429,7 +433,9 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="366" title="Заказать инстаграмм"]' ) ?>
+            </div>
         </div>
 
         <div class="hint-wrapper">

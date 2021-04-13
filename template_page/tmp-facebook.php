@@ -65,7 +65,7 @@ if($visibility=='true' ){
                             </p> 
                         </div>
                         <div class="col-sm-6 right-side-block d-flex">
-                            <img src="assets/img/web-site-pages/facebook/Vk_Usl1-1.png" class="m-auto img" style="width: auto; max-width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/fb-icon-2.png" class="m-auto img" style="width: auto; max-width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-yellow icon-bubbles4"></span>
                                     <h3 class="title-text text-center">
                                         УЗНАВАТЬ МНЕНИЯ КЛИЕНТОВ
                                     </h3>
@@ -98,7 +98,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-cyan icon-wpforms"></span>
                                     <h3 class="title-text text-center">	
                                         ОБЩАТЬСЯ С ЦЕЛЕВОЙ АУДИТОРИЕЙ
                                     </h3>
@@ -110,13 +110,13 @@ if($visibility=='true' ){
                                 </div>
                             </div>
                             <div class="col-sm-4"> 
-                                    <img src="assets/img/web-site-pages/facebook/likes.png" alt="" class="cell-icon" style="width: 100%;">
+                                    <img src="/wp-content/uploads/2021/04/likes.png" alt="" class="cell-icon" style="width: 100%;">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-cyan icon-object-group"></span>
                                     <h3 class="title-text text-center">	
                                         ПРОДВИГАТЬ ИМЯ ВАШЕГО БРЕНДА
                                     </h3>
@@ -129,7 +129,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-yellow icon-bubble2"></span>
                                     <h3 class="title-text text-center">	
                                         РАССКАЗЫВАТЬ О ТОВАРАХ ИЛИ УСЛУГАХ
                                     </h3>
@@ -142,7 +142,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-magenta icon-group"></span>
                                     <h3 class="title-text text-center">
                                         ПРИВЛЕКАТЬ НОВЫХ ПОЛЬЗОВАТЕЛЕЙ
                                     </h3>
@@ -172,8 +172,8 @@ if($visibility=='true' ){
                 </div>
             </div>
             <div class="container">
-                <div class="packages-wrapper">
-                    <div class="pack-wrapper pack-min">
+                <div class="  row packages-wrapper">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-min">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МИНИМАЛЬНЫЙ
@@ -206,7 +206,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-standart">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-standart">
                         <div class="pack-header">
                             <h3 class="pack-title ">
                                 СТАНДАРТ
@@ -239,7 +239,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-max">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-max">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МАКСИМУМ
@@ -318,7 +318,7 @@ if($visibility=='true' ){
                         </div>
                     </div>
                     <div class="d-flex">
-                        <img src="assets/img/web-site-pages/facebook/Без-им2ени-12-342x510.png" alt="" class="maxwidth m-auto">
+                        <img src="/wp-content/uploads/2021/04/Без-им2ени-12-342x510-1.png" alt="" class="maxwidth m-auto">
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -442,7 +442,10 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="366" title="Заказать инстаграмм"]' ) ?>
+            </div>
+            
         </div>
 
         <div class="hint-wrapper">

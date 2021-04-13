@@ -387,25 +387,32 @@ function theme_name_scripts() {
 	
 	wp_enqueue_style( 'style-main-style', get_template_directory_uri() .'/assets/dist/main.css' );
 	wp_enqueue_style( 'style-main-font', get_template_directory_uri() .'/assets/fonts/font.css' );
+	wp_enqueue_style( 'icomoon-font', get_template_directory_uri() .'/assets/icomoon/style.css' );
+
+	
+
 	wp_enqueue_script( 'script-jquery', 'https://code.jquery.com/jquery-3.5.1.min.js');
-	wp_enqueue_script( 'script-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js');
-	wp_enqueue_script( 'script-main', get_template_directory_uri() . '/assets/js/main.js');
+	wp_enqueue_script( 'script-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js',array(),null,true);
+	wp_enqueue_script( 'script-main', get_template_directory_uri() . '/assets/js/main.js',array(),null,true);
 	wp_enqueue_script( 'script-mainNavMenu', get_template_directory_uri() . '/assets/js/custom-js/mainNavMenu.js');
-	wp_enqueue_script( 'script-bootstrap', get_template_directory_uri() . '/assets/dist/bootstrap.min.js');	
+	wp_enqueue_script( 'script-bootstrap', get_template_directory_uri() . '/assets/dist/bootstrap.min.js',array(),null,true);	
 }
 function my_deregister_style () {
 	if ( is_page ('6') ) {//стили на главной(8)		
-		wp_enqueue_script( 'script-map-script', get_template_directory_uri() . '/assets/js/map-script.js');
+		wp_enqueue_script( 'script-map-script', get_template_directory_uri() . '/assets/js/map-script.js',array(),null,true);
 		wp_enqueue_style( 'style-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css' );
 		wp_enqueue_style( 'style-slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css' );
+
+
+		
 	}elseif ( is_page ('55') ){//id страницы
 	
 		
 
 	}else{//остальные
-		wp_enqueue_script( 'script-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js');
-		wp_enqueue_script( 'script-start-iso', get_template_directory_uri() . '/assets/js/start-isotope.js');
-		wp_enqueue_script( 'script-parallax', get_template_directory_uri() . '/assets/js/parallax.js');
+		wp_enqueue_script( 'script-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js',array(),null,true);
+		wp_enqueue_script( 'script-start-iso', get_template_directory_uri() . '/assets/js/start-isotope.js',array(),null,true);
+		wp_enqueue_script( 'script-parallax', get_template_directory_uri() . '/assets/js/parallax.js',array(),null,true);
 	}
 
 	
@@ -470,6 +477,7 @@ function project_init() {
 	'has_archive'=> true,
 	'public' => true,
 	'show_ui' => true,
+	'show_in_rest' => true,
 	'capability_type' => 'post',
 	'hierarchical' => false,
 	'rewrite' => array('slug' => 'project'),
@@ -487,7 +495,7 @@ function project_init() {
 
 add_action( 'init', 'project_init' );
 
-register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории", "singular_label" => "project item", "rewrite" => true));
+register_taxonomy("projects", array("project"), array("hierarchical" => true, "label" => "Категории",'show_in_rest' => true, "singular_label" => "project item", "rewrite" => true));
 /*
 function true_custom_fields() {
 		add_post_type_support( 'project', 'custom-fields'); // в качестве первого параметра укажите название типа поста

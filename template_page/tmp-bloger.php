@@ -70,7 +70,7 @@ if($visibility=='true' ){
                             </ul>
                         </div>
                         <div class="col-sm-5 d-flex justify-content-md-end">
-                            <img src="assets/img/web-site-pages/bloger/story.jpg" class="img" style="height: 400px;  width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/story.jpg" class="img" style="height: 400px;  width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ if($visibility=='true' ){
                             </ul>
                         </div>
                         <div class="col-sm-5 d-flex justify-content-md-end">
-                            <img src="assets/img/web-site-pages/bloger/OzIHDKFh1Pid0dYh-510x510.jpg" class="img" style="height: 400px;  width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/OzIHDKFh1Pid0dYh-768x768-1.jpg" class="img" style="height: 400px;  width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -108,11 +108,10 @@ if($visibility=='true' ){
                             КАК МЫ РАБОТАЕМ:
                         </h3>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-cyan icon-bubbles4"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -121,11 +120,10 @@ if($visibility=='true' ){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-magenta icon-stats-bars"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -134,11 +132,10 @@ if($visibility=='true' ){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-yellow icon-format_list_bulleted"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -147,11 +144,10 @@ if($visibility=='true' ){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-magenta icon-calendar"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -160,11 +156,10 @@ if($visibility=='true' ){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-yellow icon-profile"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -174,11 +169,10 @@ if($visibility=='true' ){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-cyan icon-eye"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">

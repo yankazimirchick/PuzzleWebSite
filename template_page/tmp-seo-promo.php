@@ -46,16 +46,7 @@ if($visibility=='true' ){
 <!-- Блок с паралаксом конец-->
 
 <div class="smm">
-            <section class="paralax-block">
-                <div class="paralax-overlay"></div>
-                <div style="background-image: url(&quot;assets/img/seo-page/seo.jpg&quot;); background-position: 0 405%;" class="paralax-wrapper">
-                    <div class="paralax-inner">
-                        <h1 class="paralax-tittle" style="padding-top: 0px; opacity: 1;">
-                            SEO ПРОДВИЖЕНИЕ САЙТОВ
-                        </h1>
-                    </div>
-                </div>
-            </section>
+           
 
             <div class="about-service-block">
                 <div class="container">
@@ -75,7 +66,7 @@ if($visibility=='true' ){
                             </p>
                         </div>
                         <div class="col-sm-6 right-side-block">
-                            <img src="assets/img/seo-page/diagram-seo-a-x2-486x510.png" class="img">
+                            <img src="/wp-content/uploads/2021/04/seo-2.png" class="img">
                         </div>
                     </div>
                 </div>
@@ -89,16 +80,16 @@ if($visibility=='true' ){
                     <div class="result-slider-wrapper">
                         <div class="result-slider">
                             <div>
-                                <img src="assets/img/seo-page/slider/d2.png" alt="" class="slider-img">
+                                <img src="/wp-content/uploads/2021/04/АВТОШКОЛА.png" alt="" class="slider-img">
                             </div>
                             <div>
-                                <img src="assets/img/seo-page/slider/d3.png" alt="" class="slider-img">
+                                <img src="/wp-content/uploads/2021/04/БЕЛЫЙ-САД.png" alt="" class="slider-img">
                             </div>
                             <div>
-                                <img src="assets/img/seo-page/slider/d4.png" alt="" class="slider-img">
+                                <img src="/wp-content/uploads/2021/04/ЮНИПЛАСТ.png" alt="" class="slider-img">
                             </div>
                             <div>
-                                <img src="assets/img/seo-page/slider/diagram-seo-a-x2-486x510.png" alt="" class="slider-img">
+                                <img src="/wp-content/uploads/2021/04/ТЕРМОСТАР.png" alt="" class="slider-img">
                             </div>
                         </div>
                     </div>
@@ -115,7 +106,8 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                        <span class="color-cyan icon-coin-dollar"></span>
+                                    
                                     <h3 class="title-text">
                                         ПОТОК КЛИЕНТОВ - БЕСПЛАТНО!
                                     </h3>
@@ -128,7 +120,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                        <span class="color-magenta icon-calendar"></span>
                                     <h3 class="title-text">	
                                         ДЛИТЕЛЬНЫЙ РЕЗУЛЬТАТ
                                     </h3>
@@ -141,7 +133,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-yellow icon-fire"></span>
                                     <h3 class="title-text">
                                         ТОЛЬКО ГОРЯЧИЕ КЛИЕНТЫ
                                     </h3>
@@ -156,7 +148,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-cyan icon-stats-dots"></span>
                                     <h3 class="title-text">	
                                         ОТСЛЕЖИВАНИЕ РЕЗУЛЬТАТОВ
                                     </h3>
@@ -169,7 +161,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-magenta icon-heart"></span>
                                     <h3 class="title-text">	
                                         ЛОЯЛЬНОСТЬ КЛИЕНТОВ
                                     </h3>
@@ -182,7 +174,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-yellow icon-flag"></span>
                                     <h3 class="title-text">
                                         ЗАХВАТ РЫНКА
                                     </h3>
@@ -369,7 +361,7 @@ if($visibility=='true' ){
                 <div class="d-flex align-items-center received-bonuses__wrapper">
                     <div class="received-bonuses__body_left-side col-md-6">
                         <div class="received-bonuses__img-wrapper">
-                            <img src="assets/img/seo-page/diagram-seo-b-x2-510x340.png" alt="">
+                            <img src="/wp-content/uploads/2021/04/seo-1.png" alt="">
                         </div>
                     </div>
                     <div class="received-bonuses__body_right-side col-md-6">
@@ -630,7 +622,10 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+          
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="370" title="Закажите SEO"]' ) ?>
+            </div>
         </div>
 
     </div>

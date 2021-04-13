@@ -73,7 +73,11 @@ footer {
     .header-container {
 
         .first-level-main-items > a {
-            color: #FFF;
+            color: #fff;
+            @media (max-width: 1200px) {
+                color: #000;
+            }
+          
         }
 
         .header-logo-wrapper {

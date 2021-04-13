@@ -64,7 +64,7 @@ if($visibility=='true' ){
                     <div class="row">
                         <div class="col-md-3 d-flex">
                             <div class="img-wrapper">
-                                <img src="" alt="" class="img">
+                            <span class="color-yellow icon-bubbles4"></span>
                             </div>
                             <div class="text-wrapper">
                                 <p class="text">
@@ -74,7 +74,7 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 d-flex">
                             <div class="img-wrapper">
-                                <img src="" alt="" class="img">
+                            <span class="color-yellow icon-bubbles4"></span>
                             </div>
                             <div class="text-wrapper">
                                 <p class="text">
@@ -84,7 +84,7 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 d-flex">
                             <div class="img-wrapper">
-                                <img src="" alt="" class="img">
+                            <span class="color-yellow icon-bubbles4"></span>
                             </div>
                             <div class="text-wrapper">
                                 <p class="text">
@@ -94,7 +94,7 @@ if($visibility=='true' ){
                         </div>
                         <div class="col-md-3 d-flex">
                             <div class="img-wrapper">
-                                <img src="" alt="" class="img">
+                            <span class="color-yellow icon-bubbles4"></span>
                             </div>
                             <div class="text-wrapper">
                                 <p class="text">
@@ -142,7 +142,7 @@ if($visibility=='true' ){
                             </ul>
                         </div>
                         <div class="col-sm-6 d-flex justify-content-md-end">
-                            <img src="assets/img/web-site-pages/target/vk-900x435.jpg" class="img" style="max-width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/target.jpg" class="img" style="max-width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -186,7 +186,7 @@ if($visibility=='true' ){
                             </ul>
                         </div>
                         <div class="col-sm-6 d-flex justify-content-md-end">
-                            <img src="assets/img/web-site-pages/target/insta-346x510.jpg" class="img" style="max-width: 100%;  height: auto; margin: 0 auto;">
+                            <img src="/wp-content/uploads/2021/04/target2.jpg" class="img" style="max-width: 100%;  height: auto; margin: 0 auto;">
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@ if($visibility=='true' ){
                             </ul>
                         </div>
                         <div class="col-sm-6 d-flex justify-content-md-end">
-                            <img src="assets/img/web-site-pages/target/fb-900x435.jpg" class="img" style="max-width: 100%;  max-height: 300px;">
+                            <img src="/wp-content/uploads/2021/04/target3.jpg" class="img" style="max-width: 100%;  max-height: 300px;">
                         </div>
                     </div>
                 </div>
@@ -255,8 +255,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-cyan icon-wb_incandescent"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -268,8 +267,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-magenta icon-cog"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -281,8 +279,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-yellow icon-bullhorn"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -294,8 +291,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-magenta icon-signal"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -307,8 +303,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-yellow icon-group"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -333,8 +328,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-cyan icon-pie-chart"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -346,8 +340,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-magenta icon-bullhorn"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">
@@ -359,8 +352,7 @@ if($visibility=='true' ){
                             <div class="col-md-4">
                                 <div class="table-item d-flex flex-column">
                                     <div class="col-xs-12 left-side-block">
-                                        <img src="assets/img/icon/unknow_icon.png"
-                                            class="table-img">
+                                    <span class="color-yellow icon-cog"></span>
                                     </div>
                                     <div class="col-xs-3 right-side-block">
                                         <p class="text text-center">

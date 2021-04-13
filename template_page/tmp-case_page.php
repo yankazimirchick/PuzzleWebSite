@@ -26,19 +26,20 @@ $visibility = get_field('background_visibility');
 if($visibility=='true' ){
 ?>
 <section class="paralax-block">
-    <div class="paralax-overlay" style="opacity: <?php the_field('b1-background_opacity'); ?>;background-color: <?php the_field('b1-background_overlay'); ?>;"></div>
-    <div style="background-image:url(<?php the_field('b1-background_image'); ?>)"
-        class="paralax-wrapper">
+    <div class="paralax-overlay"
+        style="opacity: <?php the_field('b1-background_opacity'); ?>;background-color: <?php the_field('b1-background_overlay'); ?>;">
+    </div>
+    <div style="background-image:url(<?php the_field('b1-background_image'); ?>)" class="paralax-wrapper">
         <div class="paralax-inner">
             <h1 class="paralax-tittle">
-            <?php the_field('b1-background_text'); ?>
-            </h1> 
+                <?php the_field('b1-background_text'); ?>
+            </h1>
             <?php if( get_field('b1-background_subtext') ): ?>
             <p class="text-paralax">
-            <?php the_field('b1-background_subtext'); ?>
-                        </p> 
+                <?php the_field('b1-background_subtext'); ?>
+            </p>
             <?php endif; ?>
-                            
+
         </div>
     </div>
 </section>
@@ -57,9 +58,18 @@ if($visibility=='true' ){
 <?php
 global $post; // не обязательно
 
-// 5 записей из рубрики 7
+
+ 
+
+
+$webDevProjects = array();
+$smmProjects = array();
+$seoProjects = array();
+$contextAdsProjects = array();
+
 $myposts = get_posts( array(
 	'post_type' => 'project',
+    'posts_per_page' => '50',
 	
 ) );
 echo('<pre>');
@@ -70,38 +80,32 @@ foreach( $myposts as $post ){
 
 
 	    setup_postdata( $post );
-		echo the_permalink();
-	    
-       
-        echo('<pre>');        
-        print_r('имя поста: '.$post->post_title);
-        echo('<br>');
-        $item=wp_get_post_terms( $post->ID, 'projects', array('fields' => 'all'));
-        print_r('слаг: ');
-        foreach($item as $itemcat){
-            print_r($itemcat->slug.' ');
-        }
-        print_r('<br>');
-
-        print_r('имя: ');
-        foreach($item as $itemcat){
-            print_r($itemcat->name.'  ');
-        }
-        print_r('<br>');
-
-        echo('фото : '.$thumbnail = get_the_post_thumbnail_url($post->ID));
-        echo('</pre>');       
-        echo('<br>');      
+		
         
-    // $post_id будет содержать ID текущего в цикле поста
-    //$term_list = wp_get_post_terms( 2647, 'post_tag', array('fields' => 'all') );
 
-     
-	echo ('<br>');
-	// стандартный вывод записей
+        
+        $project_slug=wp_get_post_terms( $post->ID, 'projects', array('fields' => 'slugs'));
+
+
+    
+        
+
+
+        if (in_array("webdev", $project_slug)) {
+			array_push($webDevProjects, $post);
+		}
+        if (in_array("seo", $project_slug)) {
+			array_push($seoProjects, $post);
+		}
+        if (in_array("smm", $project_slug)) {
+			array_push($smmProjects, $post);
+		}
+        if (in_array("context", $project_slug)) {
+			array_push($contextAdsProjects, $post);
+		}
 }
 
-
+        
 
 
 wp_reset_postdata(); // сбрасываем переменную $post
@@ -175,51 +179,47 @@ wp_reset_postdata(); // сбрасываем переменную $post
             </div>
             <div id="webDevGrid" class="webDevGrid innerGrid  container-fluid pl-0 pr-0">
                 <div class="row">
-                    <div class="webDevGrid-item landing-filter col-md-3 col-xs-6 col-lg-3 mb-4">
-                        <div class="innerGridItem">
-                            <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
-                                class="case-item">
-                                <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="/project/"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="webDevGrid-item vizitka-filter col-md-3 col-xs-6 col-lg-3 mb-4">
-                        <div class="innerGridItem">
-                            <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
-                                class="case-item">
-                                <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="/project/"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="webDevGrid-item shop-filter  col-md-3 col-xs-6 col-lg-3 mb-4">
-                        <div class="innerGridItem">
-                            <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
-                                class="case-item">
-                                <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="/project/"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="webDevGrid-item col-md-3 col-xs-6 col-lg-3 mb-4">
-                        <div class="innerGridItem">
-                            <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
-                                class="case-item">
-                                <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="/project/"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="webDevGrid-item col-md-4 col-xs-6 col-lg-3 mb-4">
-                        <div class="innerGridItem">
-                            <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2020/06/k-3-510x340.jpg');"
-                                class="case-item">
-                                <h3 class="inner-text">knife-collection.com</h3>
-                                <a class="inner-link" href="/project/"></a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+    foreach($webDevProjects as $webDevProjectsItem){   
+     $projectSlugs=wp_get_post_terms($webDevProjectsItem->ID, 'projects', array('fields' => 'slugs'));
+     $filter="";
+     foreach ($projectSlugs as $projectSlugItem){
+        if ($projectSlugItem == "internet-magazin") {
+            $filter=$filter.' shop-filter';
+        }
+        if ($projectSlugItem == "landing-page") {
+            $filter=$filter.' landing-filter';            
+        }
+        if ($projectSlugItem == "site-vizitka") {
+            $filter=$filter.' vizitka-filter';          
+        }      
+     }
+
+
+
+
+
+
+     ?>
+
+     <div class="webDevGrid-item <?=$filter;?> col-md-3 col-xs-6 col-lg-3 mb-4">
+     <div class="innerGridItem">
+         <div style="background-image:url('<?=$thumbnail = get_the_post_thumbnail_url($webDevProjectsItem->ID);?>');"
+             class="case-item">
+             <h3 class="inner-text"><?=$webDevProjectsItem->post_title;?></h3>
+             <a class="inner-link" href="<?the_permalink($webDevProjectsItem->ID);?>"></a>
+         </div>
+     </div>
+     </div>
+
+
+    <?}?>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -257,8 +257,43 @@ wp_reset_postdata(); // сбрасываем переменную $post
             </div>
             <div id="smmGrid" class="  smmGrid innerGrid container-fluid pl-0 pr-0">
                 <div class="row">
+
+                <?php
+    foreach($smmProjects as $smmProjectsItem){   
+     $projectSlugs=wp_get_post_terms($smmProjectsItem->ID, 'projects', array('fields' => 'slugs'));
+     $filter="";
+     foreach ($projectSlugs as $projectSlugItem){
+        if ($projectSlugItem == "vedenie-profilya") {
+            $filter=$filter.' profile-filter';
+        }
+        if ($projectSlugItem == "target-ads") {
+            $filter=$filter.' targetAds-filter';            
+        }
+            
+     }
+
+
+
+
+     ?>
+
+     <div class="smmGrid-item <?=$filter;?> col-md-3 col-xs-6 col-lg-3 mb-4">
+     <div class="innerGridItem">
+         <div style="background-image:url('<?=$thumbnail = get_the_post_thumbnail_url($smmProjectsItem->ID);?>');"
+             class="case-item">
+             <h3 class="inner-text"><?=$smmProjectsItem->post_title;?></h3>
+             <a class="inner-link" href="<?the_permalink($smmProjectsItem->ID);?>"></a>
+         </div>
+     </div>
+     </div>
+
+
+    <?}?>
+
+
+
                     <div
-                        class="smmGrid-item innerGrid-item  profile-filter targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none smmGrid-item innerGrid-item  profile-filter targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
@@ -268,7 +303,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="smmGrid-item innerGrid-item  profile-filter targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none smmGrid-item innerGrid-item  profile-filter targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
@@ -278,7 +313,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="smmGrid-item innerGrid-item  profile-filter targetAds-filter  col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none smmGrid-item innerGrid-item  profile-filter targetAds-filter  col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
@@ -287,7 +322,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="smmGrid-item innerGrid-item   targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="d-none smmGrid-item innerGrid-item   targetAds-filter col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
@@ -296,7 +331,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="smmGrid-item innerGrid-item   targetAds-filter col-md-4 col-xs-6 col-lg-3 mb-4">
+                    <div class="d-none smmGrid-item innerGrid-item   targetAds-filter col-md-4 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2021/01/4742454-510x397.jpg');"
                                 class="case-item">
@@ -324,7 +359,36 @@ wp_reset_postdata(); // сбрасываем переменную $post
             </div>
             <div id="seoGrid" class="seoGrid innerGrid pl-0 pr-0">
                 <div class="row">
-                    <div class="seoGridItem innerGridItem  col-md-3 col-xs-6 col-lg-3 mb-4">
+
+
+
+
+                <?php
+    foreach($seoProjects as $seoProjectsItem){   
+     $projectSlugs=wp_get_post_terms($seoProjectsItem->ID, 'projects', array('fields' => 'slugs'));
+     $filter="";
+     
+
+
+
+
+     ?>
+
+     <div class="seoGridItem <?=$filter;?> col-md-3 col-xs-6 col-lg-3 mb-4">
+     <div class="innerGridItem">
+         <div style="background-image:url('<?=$thumbnail = get_the_post_thumbnail_url($seoProjectsItem->ID);?>');"
+             class="case-item">
+             <h3 class="inner-text"><?=$seoProjectsItem->post_title;?></h3>
+             <a class="inner-link" href="<?the_permalink($seoProjectsItem->ID);?>"></a>
+         </div>
+     </div>
+     </div>
+
+
+    <?}?>
+
+
+                    <div class="seoGridItem d-none innerGridItem  col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
@@ -333,7 +397,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="seoGridItem innerGridItem  col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="seoGridItem d-none innerGridItem  col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
@@ -342,7 +406,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="seoGridItem innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="seoGridItem d-none innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
@@ -351,7 +415,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="seoGridItem innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="seoGridItem d-none innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
@@ -360,7 +424,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="seoGridItem innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="seoGridItem d-none innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
@@ -369,7 +433,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                             </div>
                         </div>
                     </div>
-                    <div class="seoGridItem innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
+                    <div class="seoGridItem d-none innerGridItem   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2019/11/belysad-510x341.jpg');"
                                 class="case-item">
@@ -401,11 +465,10 @@ wp_reset_postdata(); // сбрасываем переменную $post
                                 id="webDevAll">Все
                             </button>
                             <button data-filter=".googleAdWords-filter"
-                                class="service-filter-button-item innerFilterButton contextAdsButton   ">Landing
-                                page
+                                class="service-filter-button-item innerFilterButton contextAdsButton   ">googleAdWords
                             </button>
                             <button data-filter=".yandexDirect-filter"
-                                class="service-filter-button-item innerFilterButton contextAdsButton ">Сайт-визитка
+                                class="service-filter-button-item innerFilterButton contextAdsButton ">yandexDirect
                             </button>
 
 
@@ -415,8 +478,42 @@ wp_reset_postdata(); // сбрасываем переменную $post
             </div>
             <div id="contextAdsGrid " class="contextAdsGrid innerGrid  container-fluid pl-0 pr-0">
                 <div class="row">
+
+
+                <?php
+    foreach($contextAdsProjects as $contextAdsProjectsItem){   
+     $projectSlugs=wp_get_post_terms($contextAdsProjectsItem->ID, 'projects', array('fields' => 'slugs'));
+     $filter="";
+     foreach ($projectSlugs as $projectSlugItem){
+        if ($projectSlugItem == "google-adwords") {
+            $filter=$filter.' googleAdWords-filter';
+        }
+        if ($projectSlugItem == "yandex-direct") {
+            $filter=$filter.' yandexDirect-filter';            
+        }
+            
+     }
+
+
+
+
+     ?>
+
+     <div class="contextAdsGrid-item <?=$filter;?> col-md-3 col-xs-6 col-lg-3 mb-4">
+     <div class="innerGridItem">
+         <div style="background-image:url('<?=$thumbnail = get_the_post_thumbnail_url($contextAdsProjectsItem->ID);?>');"
+             class="case-item">
+             <h3 class="inner-text"><?=$contextAdsProjectsItem->post_title;?></h3>
+             <a class="inner-link" href="<?the_permalink($contextAdsProjectsItem->ID);?>"></a>
+         </div>
+     </div>
+     </div>
+
+     <?}?>
+
+
                     <div
-                        class="contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="position:relative; background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');display: flex;justify-content: center;align-items: center;"
                                 class="case-item">
@@ -426,7 +523,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
@@ -436,7 +533,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter    col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter    col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
@@ -446,7 +543,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
+                        class="d-none contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-3 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">
@@ -456,7 +553,7 @@ wp_reset_postdata(); // сбрасываем переменную $post
                         </div>
                     </div>
                     <div
-                        class="contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-4 col-xs-6 col-lg-3 mb-4">
+                        class="d-none contextAdsGrid-item innerGrid-item  googleAdWords-filter yandexDirect-filter   col-md-4 col-xs-6 col-lg-3 mb-4">
                         <div class="innerGridItem">
                             <div style="background-image:url('https://puzzle-agency.by/wp-content/uploads/2018/07/gotovimsya-k-otopitelnomu-sezonu-1-510x340.jpg');"
                                 class="case-item">

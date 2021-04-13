@@ -191,6 +191,7 @@
         position: absolute;
         top: -40px;
         min-width: 280px;
+        width: max-content;
         padding: 25px 20px 40px;
         left: 100%;
         border-left: 45px solid transparent;
@@ -220,6 +221,22 @@
 
     .icon-phone-wrapper {}
 }
+
+.fixed-top {
+  
+    animation: smoothScroll 0.3s forwards;
+}
+
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+  
 
 @media (max-width: 1200px) {
 
@@ -380,6 +397,7 @@
                 padding: 0;
                 margin: 0;
                 background: #FFF;
+                height: 100vh;
 
                 .main-menu {
                     flex-direction: column;
@@ -448,6 +466,7 @@
 @media (max-width: 350px) {
     .header {
         padding: 10px 30px;
+        
     }
 }
 
