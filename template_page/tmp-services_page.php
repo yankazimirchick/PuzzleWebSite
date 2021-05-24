@@ -99,7 +99,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-cyan icon-pagebreak"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -116,7 +116,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-magenta icon-office"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -133,7 +133,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-yellow icon-user-check"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -150,7 +150,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-cyan icon-newspaper"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -165,7 +165,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-magenta icon-embed2"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -180,7 +180,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-yellow icon-cart"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -219,7 +219,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                     <span class="color-cyan icon-instagram"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -237,7 +237,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                    <span class="color-magenta icon-vk"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -255,7 +255,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                 <span class="color-yellow icon-facebook"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -274,7 +274,7 @@ if($visibility=='true' ){
                                         <div class="col-md-4">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                    <span class="color-magenta icon-odnoklassniki"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -314,7 +314,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-cyan icon-stats-bars2"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -332,7 +332,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-yellow icon-pie-chart"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -372,7 +372,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                    <span class="color-cyan icon-google"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -390,7 +390,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                 <span class="color-yellow icon-yandex"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -407,7 +407,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                <span class="color-cyan icon-cubes"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">
@@ -425,7 +425,7 @@ if($visibility=='true' ){
                                         <div class="col-md-5">
                                             <div class="table-item">
                                                 <div class="col-xs-3 left-side-block">
-                                                    <img src="assets/img/icon/unknow_icon.png" class="table-img">
+                                                    <span class="color-yellow icon-flag"></span>
                                                 </div>
                                                 <div class="col-xs-3 right-side-block">
                                                     <h2 class="table-title">

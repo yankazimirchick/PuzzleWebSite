@@ -74,7 +74,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                <span class="color-magenta icon-calendar"></span>
                                     <h3 class="title-text text-center">
                                         АКТУАЛЬНОСТЬ
                                     </h3>
@@ -87,7 +87,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                    <span class="color-yellow icon-group"></span>
                                     <h3 class="title-text text-center">	
                                         БОЛЬШАЯ АУДИТОРИЯ
                                     </h3>
@@ -100,7 +100,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4"> 
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                    <span class="color-cyan icon-thumbs-o-up"></span>
                                     <h3 class="title-text text-center">	
                                         ПРОСТОТА ИСПОЛЬЗОВАНИЯ
                                     </h3>
@@ -115,7 +115,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                    <span class="color-cyan icon-cog"></span>
                                     <h3 class="title-text text-center">	
                                         ФУНКЦИОНАЛЬНОСТЬ
                                     </h3>
@@ -128,7 +128,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                    <span class="color-yellow icon-pie-chart"></span>
                                     <h3 class="title-text text-center">
                                         СЕГМЕНТАЦИЯ РЕКЛАМЫ
                                     </h3>
@@ -141,7 +141,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header flex-column">
-                                    <img src="" alt="" class="cell-icon m-auto">
+                                    <span class="color-magenta icon-line-chart"></span>
                                     <h3 class="title-text text-center">	
                                         АНАЛИТИКА И СТАТИСТИКА
                                     </h3>
@@ -166,8 +166,8 @@ if($visibility=='true' ){
                 </div>
             </div>
             <div class="container">
-                <div class="packages-wrapper">
-                    <div class="pack-wrapper pack-min">
+                <div class="row  packages-wrapper">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-min">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МИНИМАЛЬНЫЙ
@@ -200,7 +200,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-standart">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-standart">
                         <div class="pack-header">
                             <h3 class="pack-title ">
                                 СТАНДАРТ
@@ -233,7 +233,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-max">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-max">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МАКСИМУМ
@@ -327,7 +327,7 @@ if($visibility=='true' ){
                         </div>
                     </div>
                     <div class="d-flex col-md-6">
-                        <img src="assets/img/web-site-pages/vk/Vk_Usl1-1.png" alt="" class="maxwidth m-auto" style="max-height: 800px;">
+                        <img src="/wp-content/uploads/2021/04/vk-1.png" alt="" class="maxwidth m-auto" style="max-height: 800px;">
                     </div>
                 </div>
             </div>
@@ -434,8 +434,12 @@ if($visibility=='true' ){
                     <input type="submit" class="cyan-button weight-button">
                 </div>
             </div> -->
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="366" title="Заказать инстаграмм"]' ) ?>
+            </div>
         </div>
+
+
 
         <div class="hint-wrapper">
             <div class="container">

@@ -66,7 +66,7 @@ if($visibility=='true' ){
                             </p>
                         </div>
                         <div class="col-sm-6 right-side-block">
-                            <img src="assets/img/context/paid-media-1-510x451.png" class="img">
+                            <img src="/wp-content/uploads/2021/04/paid-media-1-768x679-1.png" class="img">
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-cyan icon-rocket"></span>
                                     <h3 class="title-text">
                                         БЫСТРЫЙ СТАРТ
                                     </h3>
@@ -94,7 +94,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-magenta icon-money"></span>
                                     <h3 class="title-text">	
                                         ОПЛАТА ЗА РЕЗУЛЬТАТ
                                     </h3>
@@ -107,7 +107,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-yellow icon-binoculars"></span>
                                     <h3 class="title-text">
                                         ЗАМЕТНЕЕ SEO
                                     </h3>
@@ -122,7 +122,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-magenta icon-users11"></span>
                                     <h3 class="title-text">	
                                         ОТСЛЕЖИВАНИЕ ЭФФЕКТИВНОСТИ
                                     </h3>
@@ -135,7 +135,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-cyan icon-group_add"></span>
                                     <h3 class="title-text">
                                         ТОЛЬКО ЦЕЛЕВАЯ АУДИТОРИЯ
                                     </h3>
@@ -148,7 +148,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="color-yellow icon-bubbles4"></span>
                                     <h3 class="title-text">	
                                         ВОЗВРАТ КЛИЕНТА
                                     </h3>
@@ -169,7 +169,7 @@ if($visibility=='true' ){
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="d-flex justify-content-center full-form__image-block_left-side">
-                            <img src="assets/img/context/smm.jpg" class="full-form__image_left-side">
+                            <img src="/wp-content/uploads/2021/04/rfhnbyrf.jpg" class="full-form__image_left-side">
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -214,8 +214,8 @@ if($visibility=='true' ){
                 </div>
             </div>
             <div class="container">
-                <div class="packages-wrapper">
-                    <div class="pack-wrapper pack-min">
+                <div class="row packages-wrapper">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-min">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 СТАРТ
@@ -260,7 +260,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-standart">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-standart">
                         <div class="pack-header">
                             <h3 class="pack-title ">
                                 СТАНДАРТ
@@ -308,7 +308,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-max">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-max">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МАКСИМУМ
@@ -379,7 +379,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse1">
                             Как долго ожидать настройку контекстной рекламы?
                         </a>
                       </h4>
@@ -393,7 +393,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        <a data-toggle="collapse" class="collapsed"  data-parent="#accordion" href="#collapse2">
                             От чего зависят звонки/заказы на сайте?
                         </a>
                       </h4>
@@ -408,7 +408,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse3">
                             Почему нет звонков/заявок нет, если уже настроена контекстная реклама?
                         </a>
                       </h4>
@@ -422,7 +422,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse4">
                             Зачем нужно ведение контекстной рекламы?    
                         </a>
                       </h4>
@@ -436,7 +436,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse5">
                             Сколько денег я буду тратить?
                         </a>
                       </h4>
@@ -450,7 +450,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse6">
                             Почему вы делаете аудит бесплатно?
                         </a>
                       </h4>
@@ -464,7 +464,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Можно ли продвигать по SEO Landing Page?</a>
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse7">Можно ли продвигать по SEO Landing Page?</a>
                       </h4>
                     </div>
                     <div id="collapse7" class="panel-collapse collapse">
@@ -476,7 +476,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse8">
                             Как будет построена отчётность?
                         </a>
                       </h4>
@@ -490,7 +490,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse9">
                             Сколько будет ключевых слов?
                         </a>
                       </h4>
@@ -504,7 +504,7 @@ if($visibility=='true' ){
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                        <a data-toggle="collapse"  class="collapsed" data-parent="#accordion" href="#collapse10">
                             Дорого у вас!
                         </a>
                       </h4>
@@ -545,7 +545,9 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="370" title="Закажите SEO"]' ) ?>
+            </div>
         </div>
 
     </div>

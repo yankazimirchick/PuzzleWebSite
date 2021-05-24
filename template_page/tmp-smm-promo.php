@@ -76,7 +76,7 @@ if($visibility=='true' ){
                             </p>
                         </div>
                         <div class="col-sm-6 right-side-block">
-                            <img src="assets/img/smm-page/diagram-paid-media-b-x2-501x510.png" class="img">
+                            <img src="/wp-content/uploads/2021/04/diagram-paid-media-b-x2-768x781-1.png" class="img">
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="icon-coin-dollar"></span>
                                     <h3 class="title-text">
                                         НИКАКИХ ЗАТРАТ НА СТАРТЕ
                                     </h3>
@@ -106,7 +106,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                    <span class="icon-target"></span>
                                     <h3 class="title-text">	
                                         ЦЕЛЕВАЯ АУДИТОРИЯ
                                     </h3>
@@ -120,7 +120,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="icon-group_add"></span>
                                     <h3 class="title-text">
                                         ЛОЯЛЬНОСТЬ КЛИЕНТОВ
                                     </h3>
@@ -135,7 +135,7 @@ if($visibility=='true' ){
                         <div class="row">
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="icon-diamond"></span>
                                     <h3 class="title-text">	
                                         ИМИДЖ КОМПАНИИ
                                     </h3>
@@ -148,7 +148,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="icon-money"></span>
                                     <h3 class="title-text">	
                                         САМАЯ ДЕШЕВАЯ РЕКЛАМА
                                     </h3>
@@ -161,7 +161,7 @@ if($visibility=='true' ){
                             </div>
                             <div class="col-sm-4">  
                                 <div class="cell-header">
-                                    <img src="" alt="" class="cell-icon">
+                                <span class="icon-bubbles4"></span>
                                     <h3 class="title-text">
                                         БЫСТРАЯ КОММУНИКАЦИЯ
                                     </h3>

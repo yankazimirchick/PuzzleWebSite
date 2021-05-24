@@ -54,26 +54,9 @@ if($visibility=='true' ){
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-xs-12">
-                        <div class="contact-form">
-                            <h3>
-                                Оставьте заявку
-                            </h3>
-                            <div class="contact-form-label-main">
-                                <p>
-                                    и мы Вам перезвоним
-                                </p>
-                            </div>
+                    <?=do_shortcode('[contact-form-7 id="363" title="Страница контактов"]')?>
 
-
-                            <p class="contact-form-label">Номер телефона *</p>
-                            <input type="tel" value="" autocomplete="tel" placeholder="+375(ХХ) ХХХ-ХХ-ХХ"
-                                aria-invalid="false" required="">
-                            <p class="contact-form-label">Ваше Имя</p>
-                            <input type="tel" value="" autocomplete="tel" placeholder="+375(ХХ) ХХХ-ХХ-ХХ"
-                                aria-invalid="false" required="">
-                            <input type="button" value="отправить" class="contact-button" type="text">
-
-                        </div>
+                        
                         <div class="contact-info">
 
                             <h3>

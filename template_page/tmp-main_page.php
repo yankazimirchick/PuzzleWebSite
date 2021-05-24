@@ -25,26 +25,26 @@ Template Name: Главная
                     <p class="">Лендингов, сайтов-визиток, корпоративных сайтов, порталов и
                         интернет-магазинов</p>
                     <a class="underline-anim banner_wrapper_link"
-                        href="https://puzzle-agency.by/development/">Подробнее</a>
+                        href="/development/">Подробнее</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 col-12 banner_wrapper__item">
                     <h3 class="">КОНТЕКСТНАЯ РЕКЛАМА</h3>
                     <p class="">Настройка и ведение рекламы в Google AdWords и Яндекс.Директ</p>
                     <a class="underline-anim banner_wrapper_link"
-                        href="https://puzzle-agency.by/development/">Подробнее</a>
+                        href="/context/">Подробнее</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 col-12 banner_wrapper__item">
                     <h3 class="">SMM ПРОДВИЖЕНИЕ</h3>
                     <p class="">Продвижение в социальных сетях: VK, Instagram, Facebook</p>
                     <a class="underline-anim banner_wrapper_link"
-                        href="https://puzzle-agency.by/development/">Подробнее</a>
+                        href="/smm/">Подробнее</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 col-12 banner_wrapper__item">
                     <h3 class="">SEO ПРОДВИЖЕНИЕ</h3>
                     <p class="">Профессиональное продвижение и оптимизация Вашего сайта для
                         поисковых систем</p>
                     <a class="underline-anim banner_wrapper_link"
-                        href="https://puzzle-agency.by/development/">Подробнее</a>
+                        href="/seo/">Подробнее</a>
                 </div>
 
             </div>
@@ -291,20 +291,44 @@ Template Name: Главная
                         <h3><? echo array_values($value)[0] ?></h3>
                         <p><? echo array_values($value)[3] ?></p>
                         <hr>
-                        <? echo array_values($value)[4] ?>
+                        <p><? echo array_values($value)[4] ?></p>
 
-                        <h5>Последние статьи в блоге id= <? echo array_values($value)[5] ?></h5>
+                        <h5>Последние статьи в блоге</h5>
                         <div>
+
+                        
+
                             <div class="d-flex">
-                                <div class="slider-for-text-blog">
-                                    SEO во время пандемии
-                                </div>
-                                <div class="slider-for-text-blog">
-                                    SEO во время пандемии
-                                </div>
-                                <div class="slider-for-text-blog">
-                                    SEO во время пандемии
-                                </div>
+                                
+                            <? if (array_values($value)[5]!=""){
+
+                                global $post; // не обязательно
+
+                                // 5 записей из рубрики 9
+                                $myposts = get_posts( array(
+                                    'post_type'   => 'post',
+                                    'tag'=>array_values($value)[5],
+                                ) );
+                                
+                                foreach( $myposts as $post ){
+                                    setup_postdata( $post );
+                                    echo('<div class="slider-for-text-blog">');
+                                    print_r($post->post_title);
+                                    echo(' </div>');
+                                    // стандартный вывод записей
+                                }
+
+                                wp_reset_postdata(); // сбрасываем переменную $post
+
+                            }
+                            
+                            
+                            ?>
+
+
+                          
+                                
+                                 
                             </div>
                         </div>
                         <a href="blog-archive.html">Перейти в блог</a>
@@ -368,7 +392,7 @@ Template Name: Главная
         <div class="ymap-container">
             <div class="loader loader-default"></div>
             <div id="map-yandex"></div>
-        </div><!-- .ymap-container -->
+        </div><!-- .ymap-containr -->
 
 
 
@@ -377,14 +401,15 @@ Template Name: Главная
     <div class="map-inner-contact-form">
         <h5>Закажите обратный звонок</h5>
         <p>Наш консультант свяжется с Вами в течение 10 минут!</p>
-        <div class="container">
+        <div class="p-0 container">
             
                <? echo do_shortcode('[contact-form-7 id="84" title="Закажите обратный звонок"]') ?>
                <style>
                    .input_zakaz{
                     width: 100%;
-                    padding: 12px;
+                    padding: 12px 20px;
                     border-radius: 6px;
+                    border: 0;
                    }
                    .btn_submit{
                             padding: 12px;
@@ -462,5 +487,8 @@ Template Name: Главная
 
     });
 </script>
+
+
+
 
 <?php get_footer() ?>

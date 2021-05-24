@@ -68,7 +68,7 @@ if($visibility=='true' ){
                             </p> 
                         </div>
                         <div class="col-sm-6 right-side-block d-flex">
-                            <img src="assets/img/web-site-pages/instagram/main_inst-1.png" class="m-auto img" style="width: auto; max-width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/inst-1.png" class="m-auto img" style="width: auto; max-width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ if($visibility=='true' ){
                             </p>
                         </div>
                         <div class="col-sm-6 right-side-block d-flex">
-                            <img src="assets/img/web-site-pages/instagram/main_inst2-1.png" class="m-auto img" style="width: auto; max-width: 100%;">
+                            <img src="/wp-content/uploads/2021/04/inst-2.png" class="m-auto img" style="width: auto; max-width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -154,8 +154,8 @@ if($visibility=='true' ){
                 </div>
             </div>
             <div class="container">
-                <div class="packages-wrapper">
-                    <div class="pack-wrapper pack-min">
+                <div class="row packages-wrapper">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-min">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МИНИМАЛЬНЫЙ
@@ -188,7 +188,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-standart">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-standart">
                         <div class="pack-header">
                             <h3 class="pack-title ">
                                 СТАНДАРТ
@@ -221,7 +221,7 @@ if($visibility=='true' ){
                             <button class="button-pack-order">Заказать</button>
                         </div>
                     </div>
-                    <div class="pack-wrapper pack-max">
+                    <div class="p-0 col-12 col-md-12 col-lg-4 pack-wrapper pack-max">
                         <div class="pack-header">
                             <h3 class="pack-title">
                                 МАКСИМУМ
@@ -268,7 +268,7 @@ if($visibility=='true' ){
                 <div class="row">
                     <div class="col-md-3">
                         <div class="mb-4 d-flex justify-content-center">
-                            <img src="" alt="" class="advantage-icon">
+                            <span class="color-cyan icon-bubbles4"></span>
                         </div>
                         <h4 class="title-text text-center">
                             ПОСЛЕДНЕЕ СЛОВО ЗА ВАМИ.
@@ -279,7 +279,7 @@ if($visibility=='true' ){
                     </div>
                     <div class="col-md-3">
                         <div class="mb-4 d-flex justify-content-center">
-                            <img src="" alt="" class="advantage-icon">
+                            <span class="color-magenta icon-star-full"></span>
                         </div>
                         <h4 class="title-text text-center">
                             УВАЖАЕМ РЕПУТАЦИЮ.
@@ -290,7 +290,7 @@ if($visibility=='true' ){
                     </div>
                     <div class="col-md-3">
                         <div class="mb-4 d-flex justify-content-center">
-                            <img src="" alt="" class="advantage-icon">
+                            <span class="color-yellow icon-user-secret"></span>
                         </div>
                         <h4 class="title-text text-center">
                             «БЕЛЫЕ» МЕТОДЫ ПРОДВИЖЕНИЯ СТРАНИЦЫ.
@@ -301,7 +301,7 @@ if($visibility=='true' ){
                     </div>
                     <div class="col-md-3">
                         <div class="mb-4 d-flex justify-content-center">
-                            <img src="" alt="" class="advantage-icon">
+                        <span class=" color-magenta icon-money"></span>
                         </div>
                         <h4 class="title-text text-center">
                             КОМФОРТ И ДОСТУПНОСТЬ.
@@ -417,7 +417,11 @@ if($visibility=='true' ){
                 </div>
             </div> -->
 
-            <?php echo do_shortcode( '[contact-form-7 id="235" title="Контактная форма - Заказать smm продвижения"]' ) ?>
+
+            <div class="row flex-column px-3">
+            <?php echo do_shortcode( '[contact-form-7 id="366" title="Заказать инстаграмм"]' ) ?>
+            </div>
+          
         </div>
 
         <div class="hint-wrapper">
@@ -434,3 +438,5 @@ if($visibility=='true' ){
 
 
 <?php get_footer() ?>
+
+
